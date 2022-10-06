@@ -1,0 +1,121 @@
+.container__produtos {
+    /* justify-content: space-between; */
+    padding: 1rem;
+}
+
+.produtos__cabecalho {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.produtos__titulo {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.produtos__ver-tudo {
+    background-image: url('../img/icones/icone-seta.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+    color: var(--cor-azul);
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    font-weight: 700;
+    padding-right: 1.25em;
+    text-decoration: none;
+}
+
+.produtos__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 1rem 0 0;
+    width: 100%;
+}
+
+.produto {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - .5rem);
+}
+
+.produto:nth-child(5n), .produto:last-child {
+    display: none;
+}
+
+.produto__imagem {
+    width: 100%;
+}
+
+.produto__titulo {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    padding: .5em 0;
+}
+
+.produto__preco {
+    font-weight: 700;
+    line-height: 19px;
+    padding-bottom: .5em;
+}
+
+.produto__ver-produto {
+    color: var(--cor-azul);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+
+    .container__produtos {
+        padding: 2rem 2rem;
+    }
+
+    .produtos__cabecalho {
+        margin: 0 0 .25rem 0;
+    }
+    
+    .produtos__ver-tudo {
+        background-size: 20px;
+        font-size: 16px;
+        padding-right: 2rem;
+    }
+    
+    .produtos__cards {
+        flex-wrap: nowrap;
+    }
+
+    .produto__ver-produto {
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .produtos {
+        padding-bottom: 4rem;
+    }
+
+    .container__produtos {
+        padding: 5rem 9rem 0;
+    }
+    
+    .produtos__titulo {
+        font-size: 32px;
+    }
+    
+    .produto:nth-child(5n), .produto:last-child {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: calc(50% - .5rem);
+    }
+}
