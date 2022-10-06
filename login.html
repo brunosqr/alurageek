@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login | AluraGeek</title>
+        <link rel="icon" href="assets/img/icones/favicon.svg" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
+
+    <body>
+        <!-- Cabeçalho -->
+        <header class="cabecalho">
+            <div class="container container__cabecalho">
+                <div class="container__cabecalho--barra-pesquisa">
+                    <a class="cabecalho__logo" href="./index.html">
+                        <img src="assets/img/logo.svg" alt="Logo da AluraGeek">
+                    </a>
+                    <input id="" class="cabecalho__barra-pesquisa" type="search" name="" placeholder="O que deseja encontrar?">
+                </div>
+                <img class="cabecalho__icone-lupa" src="assets/img/icones/icone-lupa.svg" alt="Pesquisar produtos">
+            </div>
+        </header>
+
+        <!-- Conteúdo principal -->
+        <main>
+
+            <!-- Login -->
+            <section class="login">
+                <div class="container container__login">
+                    <form class="login__formulario" action="#">
+                        <fieldset>
+                            <legend class="login__titulo">Iniciar Sessão</legend>
+                            <label for="login__email" class="login__input">Escreva seu email</label>
+                            <input id="login__email" class="login__campo" type="email" placeholder="Escreva seu email" required>
+                            <label for="login__senha" class="login__input"></label>
+                            <input id="login__senha" class="login__campo" type="password" placeholder="Escreva sua senha" required>
+                            <button class="login__botao botao" type="submit">Entrar</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- Rodapé -->
+        <footer class="rodape">
+
+            <div class="container__rodape">
+                <div class="container__logo-lista">
+                    <!-- Logo -->
+                    <img class="rodape__logo" src="./assets/img/logo.svg" alt="Logo da AluraGeek">
+                    <!-- Lista de links -->
+                    <ul class="rodape__lista">
+                        <li class="lista__item">
+                            <a class="lista__link" href="#">Quem somos nós</a>
+                        </li>
+                        <li class="lista__item">
+                            <a class="lista__link" href="#">Política de privacidade</a>
+                        </li>
+                        <li class="lista__item">
+                            <a class="lista__link" href="#">Programa fidelidade</a>
+                        </li>
+                        <li class="lista__item">
+                            <a class="lista__link" href="#">Nossas lojas</a>
+                        </li>
+                        <li class="lista__item">
+                            <a class="lista__link" href="#">Quero ser franqueado</a>
+                        </li>
+                        <li class="lista__item">
+                            <a class="lista__link" href="#">Anuncie aqui</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Formulário de contato -->
+                <div class="rodape__contato">
+                    <form action="#">
+                        <legend class="contato__titulo">Fale conosco</legend>
+                        <div class="container__contato container__contato--nome">
+                            <label for="nome" class="input__titulo input__titulo--nome">Nome</label>
+                            <input id="nome" type="text" class="input__conteudo input__conteudo--nome" required>
+                        </div>
+                        <div class="container__contato container__contato--mensagem">
+                            <label for="mensagem" class="input__titulo input__titulo--mensagem">Escreva sua mensagem</label>
+                            <textarea id="mensagem" cols="1" rows="2" class="input__conteudo input__conteudo--mensagem"></textarea>
+                        </div>
+                        <button class="formulario__botao botao" type="submit">Enviar mensagem</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="rodape__desenvolvedor">
+                <p class="rodape__desenvolvedor--nome">Desenvolvido por Bruno Siqueira</p>
+                <p class="rodape__desenvolvedor--ano">2022</p>
+            </div>
+        </footer>
+
+    </body>
+</html>
