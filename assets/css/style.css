@@ -4,6 +4,7 @@
 @import url(rodape.css);
 @import url(cabecalho.css);
 @import url(login.css);
+@import url(todos-produtos.css);
 
 :root {
     --fonte-padrao: 'Raleway', sans-serif;
