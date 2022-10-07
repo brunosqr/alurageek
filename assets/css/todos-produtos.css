@@ -1,0 +1,126 @@
+.todos-produtos {
+    background-color: var(--cor-cinza-fundo);
+}
+
+.container__todos-produtos {
+    padding: 2rem;
+}
+
+.todos-produtos__cabecalho {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.todos-produtos__titulo {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.todos-produtos__botao-adicionar {
+    height: 38px;
+    width: 149px;
+    background-color: var(--cor-azul);
+    border: 1px solid var(--cor-azul);
+    color: var(--cor-branco);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.todos-produtos__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 1rem;
+    width: 100%;
+}
+
+.todos-produtos__card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: calc(50% - .5rem);
+}
+
+.todos-produtos__card--icones {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5rem 0;
+    position: absolute;
+    width: 100%;
+}
+
+.icone__botao {
+    margin: 0 .5rem 0 1rem;
+}
+
+.icone__deletar {
+    height: 18px;
+    width: 14px;
+}
+
+.icone__editar {
+    height: 18px;
+    width: 18px;
+}
+
+.todos-produtos__card--imagem {
+    width: 100%;
+}
+
+.todos-produtos__card--titulo {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    padding: .5rem 0;
+}
+
+.todos-produtos__card--preco {
+    font-weight: 700;
+    line-height: 19px;
+    padding-bottom: .5rem;
+}
+
+.todos-produtos__card--codigo {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .todos-produtos__cabecalho {
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .todos-produtos__card {
+        width: calc(25% - .75rem);
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    
+    .container__todos-produtos {
+        padding: 5rem 9rem 0;
+    }
+
+    .todos-produtos__titulo {
+        font-size: 32px;
+    }
+
+    .todos-produtos__botao-adicionar {
+        height: 49px;
+        width: 162px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .todos-produtos__card {
+        margin-bottom: 4rem;
+        width: calc(16.551% - .75rem);
+    }
+}
