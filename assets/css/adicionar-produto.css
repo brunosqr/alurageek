@@ -1,0 +1,131 @@
+.adicionar-produto {
+    background-color: var(--cor-cinza-fundo);
+    display: flex;
+    justify-content: center;
+}
+
+.container__adicionar-produto {
+    padding: 1rem;
+}
+
+.adicionar-produto__formulario {
+    width: 100%;
+}
+
+.adicionar-produto__titulo {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.container__adicionar-imagem {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: auto;
+}
+
+.container__adicionar-imagem span {
+    margin: .75rem;
+}
+
+.adicionar-imagem__drag-and-drop {
+    background-color: var(--cor-branco);
+    background-image: url(../img/icones/icone-upload.svg);
+    background-position: center 25%;
+    background-repeat: no-repeat;
+    border: 1px dashed var(--cor-cinza-box-shadow);
+    display: inline-block;
+    padding: 5rem 2rem 2rem 2rem;
+    text-align: center;
+}
+
+.adicionar-imagem__dispositivo {
+    background: transparent;
+    border: 1px solid var(--cor-azul);
+    color: var(--cor-azul);
+    cursor: pointer;
+    display: block;
+    font-weight: 600;
+    height: 53px;
+    text-align: center;
+    width: 245px;
+}
+
+.adicionar-imagem__dispositivo--input {
+    display: none;
+}
+
+.container__campos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.campo__titulo {
+    background-color: var(--cor-branco);
+    border: 1px solid var(--cor-branco);
+    border-radius: 4px 4px 0 0;
+    color: var(--cor-cinza-claro);
+    font-size: 12px;
+    padding: .5rem .75rem 0;
+}
+
+.campo__entrada {
+    border: 1px solid var(--cor-branco);
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 1px 0 var(--cor-cinza-box-shadow);
+    margin-bottom: 1rem;
+    padding: .25rem .75rem .5rem;
+}
+
+.adicionar-produto__botao {
+    background-color: var(--cor-azul);
+    border: 1px solid var(--cor-azul);
+    color: var(--cor-branco);
+    height: 51px;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+
+    .adicionar-produto {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .container__adicionar-produto {
+        padding: 2.5rem 2rem 2rem;
+    }
+    
+    .container__adicionar-imagem {
+        flex-direction: row;
+        width: 704px;
+    }
+    
+    .adicionar-imagem__dispositivo {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    
+    .container__adicionar-produto {
+        padding: 4rem 0;
+        width: 559px;
+    }
+
+    .container__adicionar-imagem {
+        width: 559px;
+    }
+
+    .adicionar-produto__titulo {
+        font-size: 32px;
+        margin-bottom: 1rem;
+    }
+
+    .adicionar-imagem__drag-and-drop {
+        padding: 5rem 2rem 2rem 2rem;
+    }
+}
