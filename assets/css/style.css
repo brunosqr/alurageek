@@ -5,6 +5,7 @@
 @import url(cabecalho.css);
 @import url(login.css);
 @import url(todos-produtos.css);
+@import url(adicionar-produto.css);
 
 :root {
     --fonte-padrao: 'Raleway', sans-serif;
@@ -33,6 +34,7 @@ body {
 
 .botao {
     align-items: center;
+    cursor: pointer;
     display: flex;
     justify-content: center;
     text-align: center;
