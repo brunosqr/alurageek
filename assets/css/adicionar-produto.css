@@ -42,15 +42,23 @@
 }
 
 .adicionar-imagem__dispositivo {
-    background: transparent;
+    align-items: center;
     border: 1px solid var(--cor-azul);
     color: var(--cor-azul);
     cursor: pointer;
-    display: block;
+    display: flex;
+    font-size: 14px;
     font-weight: 600;
-    height: 53px;
+    height: 38px;
+    justify-content: center;
     text-align: center;
-    width: 245px;
+    text-decoration: none;
+    width: 225px;
+}
+
+.adicionar-imagem__dispositivo:hover {
+    background-color: var(--cor-hover-botao-transparente);
+    transition: 0.3s;
 }
 
 .adicionar-imagem__dispositivo--input {
@@ -80,6 +88,10 @@
     padding: .25rem .75rem .5rem;
 }
 
+.campo__entrada--descricao {
+    resize: none;
+}
+
 .adicionar-produto__botao {
     background-color: var(--cor-azul);
     border: 1px solid var(--cor-azul);
@@ -103,9 +115,9 @@
         flex-direction: row;
         width: 704px;
     }
-    
+
     .adicionar-imagem__dispositivo {
-        width: 400px;
+        width: 325px;
     }
 }
 
@@ -127,5 +139,12 @@
 
     .adicionar-imagem__drag-and-drop {
         padding: 5rem 2rem 2rem 2rem;
+    }
+
+    .adicionar-imagem__dispositivo {
+        font-size: 16px;
+        font-weight: 400;
+        height: 49px;
+        width: 425px;
     }
 }

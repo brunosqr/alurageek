@@ -24,7 +24,7 @@
                     </a>
                     <input id="cabecalho__login-botao botao" class="cabecalho__barra-pesquisa" type="search" name="" placeholder="O que deseja encontrar?">
                 </div>
-                <div class="cabecalho__botao cabecalho__botao--admin">Menu administrador</div>
+                <div class="botao__transparente botao__transparente--admin botao">Menu administrador</div>
                 <img class="cabecalho__icone-lupa" src="assets/img/icones/icone-lupa.svg" alt="Pesquisar produtos">
             </div>
         </header>
@@ -43,7 +43,7 @@
                                     <p class="adicionar-imagem__drag-and-drop--texto">Arraste para adicionar uma imagem para o produto</p>
                                 </div>
                                 <span>Ou</span>
-                                <label for="adicionar-imagem" class="adicionar-imagem__dispositivo botao">Procure no seu dispositivo</label>
+                                <label for="adicionar-imagem" class="adicionar-imagem__dispositivo">Procure no seu dispositivo</label>
                                 <input type="file" id="adicionar-imagem" class="adicionar-imagem__dispositivo--input" accept="image/*">
                             </div>
                             <div class="container__campos">
@@ -59,9 +59,9 @@
                                 <label for class="campo__titulo">Preço do produto</label>
                                 <input type="text" inputmode="numeric" data-type="price" class="campo__entrada" required>
                                 <label for class="campo__titulo">Descrição do produto</label>
-                                <textarea name="" id="" cols="1" rows="3" class="campo__entrada" required></textarea>
+                                <textarea name="" id="" cols="1" rows="3" class="campo__entrada campo__entrada--descricao" required></textarea>
                             </div>
-                            <button class="adicionar-produto__botao botao">Adicionar produto</button>
+                            <button class="adicionar-produto__botao botao__opaco botao">Adicionar produto</button>
                         </fieldset>
                     </form>
                 </div>
@@ -106,9 +106,9 @@
                         </div>
                         <div class="container__contato container__contato--mensagem">
                             <label for="mensagem" class="input__titulo input__titulo--mensagem">Escreva sua mensagem</label>
-                            <textarea id="mensagem" cols="1" rows="2" class="input__conteudo input__conteudo--mensagem"></textarea>
+                            <textarea id="mensagem" cols="1" rows="2" class="input__conteudo input__conteudo--mensagem" required></textarea>
                         </div>
-                        <button class="formulario__botao botao" type="submit">Enviar mensagem</button>
+                        <button class="formulario__botao botao__opaco botao" type="submit">Enviar mensagem</button>
                     </form>
                 </div>
             </div>

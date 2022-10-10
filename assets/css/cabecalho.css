@@ -15,24 +15,12 @@
     display: none;
 }
 
-.cabecalho__botao {
-    border: 1px solid var(--cor-azul);
-    color: var(--cor-azul);
-    font-size: 14px;
-    font-weight: 600;
-    height: 38px;
-}
-
-.cabecalho__botao--login {
+.botao__transparente--login {
+    cursor: pointer;
     width: 131px;
 }
 
-.cabecalho__botao--admin {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    text-decoration: none;
+.botao__transparente--admin {
     width: 164px;
 }
 
@@ -67,10 +55,11 @@
         font-weight: 400;
         margin-left: 2rem;
         padding: .75rem 1rem;
+        text-decoration: none;
         width: 40vw;
     }
 
-    .cabecalho__botao {
+    .botao__transparente--login {
         width: 164px;
     }
 
@@ -97,12 +86,5 @@
 
     .cabecalho__barra-pesquisa {
         width: 28vw;
-    }
-
-    .cabecalho__botao {
-        font-size: 16px;
-        font-weight: 400;
-        height: 49px;
-        width: 180px;
     }
 }

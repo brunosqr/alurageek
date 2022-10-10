@@ -17,6 +17,12 @@
     --cor-cinza-claro: #A2A2A2;
     --cor-cinza-fundo: #F5F5F5;
     --cor-cinza-padrao: #464646;
+    --cor-hover-botao-opaco: #5595E9;
+    --cor-hover-botao-transparente: #D4E4FA;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -34,9 +40,60 @@ body {
 
 .botao {
     align-items: center;
-    cursor: pointer;
     display: flex;
     justify-content: center;
     text-align: center;
     text-decoration: none;
+}
+
+.botao__transparente {
+    border: 1px solid var(--cor-azul);
+    color: var(--cor-azul);
+    font-size: 14px;
+    font-weight: 600;
+    height: 38px;
+}
+
+.botao__transparente:hover {
+    background-color: var(--cor-hover-botao-transparente);
+    transition: 0.3s;
+}
+
+.botao__opaco {
+    background-color: var(--cor-azul);
+    border: 1px solid var(--cor-azul);
+    color: var(--cor-branco);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    height: 38px;
+}
+
+.botao__opaco:hover {
+    background-color: var(--cor-hover-botao-opaco);
+    transition: 0.3s;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .botao__transparente {
+
+    }
+
+    
+}
+
+@media screen and (min-width: 1440px) {
+    
+    .botao__transparente {
+        font-size: 16px;
+        font-weight: 400;
+        height: 49px;
+    }
+
+    .botao__opaco {
+        font-size: 16px;
+        font-weight: 400;
+        height: 49px;
+    }
 }

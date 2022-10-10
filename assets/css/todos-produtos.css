@@ -19,13 +19,7 @@
 }
 
 .todos-produtos__botao-adicionar {
-    height: 38px;
     width: 149px;
-    background-color: var(--cor-azul);
-    border: 1px solid var(--cor-azul);
-    color: var(--cor-branco);
-    font-size: 14px;
-    font-weight: 600;
 }
 
 .todos-produtos__cards {
@@ -113,10 +107,7 @@
     }
 
     .todos-produtos__botao-adicionar {
-        height: 49px;
         width: 162px;
-        font-size: 16px;
-        font-weight: 400;
     }
 
     .todos-produtos__card {
