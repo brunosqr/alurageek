@@ -13,13 +13,14 @@
 }
 
 .todos-produtos__titulo {
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
 .todos-produtos__botao-adicionar {
-    width: 149px;
+    height: 2.375rem;
+    width: 9.3125rem;
 }
 
 .todos-produtos__cards {
@@ -50,13 +51,13 @@
 }
 
 .icone__deletar {
-    height: 18px;
-    width: 14px;
+    height: 1.125rem;
+    width: .875rem;
 }
 
 .icone__editar {
-    height: 18px;
-    width: 18px;
+    height: 1.125rem;
+    width: 1.125rem;
 }
 
 .todos-produtos__card--imagem {
@@ -64,22 +65,19 @@
 }
 
 .todos-produtos__card--titulo {
-    font-size: 14px;
+    font-size: .875rem;
     font-weight: 500;
-    line-height: 16px;
-    padding: .5rem 0;
+    padding: .7rem 0;
 }
 
 .todos-produtos__card--preco {
     font-weight: 700;
-    line-height: 19px;
-    padding-bottom: .5rem;
+    padding-bottom: .6rem;
 }
 
 .todos-produtos__card--codigo {
-    font-size: 14px;
+    font-size: .875rem;
     font-weight: 500;
-    line-height: 16px;
 }
 
 @media screen and (min-width: 768px) {
@@ -103,11 +101,12 @@
     }
 
     .todos-produtos__titulo {
-        font-size: 32px;
+        font-size: 2rem;
     }
 
     .todos-produtos__botao-adicionar {
-        width: 162px;
+        height: 3.0625rem;
+        width: 10.125rem;
     }
 
     .todos-produtos__card {

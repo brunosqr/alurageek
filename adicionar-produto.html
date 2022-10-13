@@ -24,7 +24,7 @@
                     </a>
                     <input id="cabecalho__login-botao botao" class="cabecalho__barra-pesquisa" type="search" name="" placeholder="O que deseja encontrar?">
                 </div>
-                <div class="botao__transparente botao__transparente--admin botao">Menu administrador</div>
+                <a class="botao__transparente botao__transparente--admin botao" href="todos-produtos.html">Menu administrador</a>
                 <img class="cabecalho__icone-lupa" src="assets/img/icones/icone-lupa.svg" alt="Pesquisar produtos">
             </div>
         </header>
@@ -46,20 +46,28 @@
                                 <label for="adicionar-imagem" class="adicionar-imagem__dispositivo">Procure no seu dispositivo</label>
                                 <input type="file" id="adicionar-imagem" class="adicionar-imagem__dispositivo--input" accept="image/*">
                             </div>
-                            <div class="container__campos">
-                                <label for class="campo__titulo">Categoria</label>
-                                <select class="campo__entrada campo__entrada--seletor" required>
-                                    <option value="">Selecione uma categoria</option>
-                                    <option value="star-wars">Star Wars</option>
-                                    <option value="console">Consoles</option>
-                                    <option value="diversos">Diversos</option>
-                                </select>
-                                <label for class="campo__titulo">Nome do produto</label>
-                                <input type="text" class="campo__entrada" required>
-                                <label for class="campo__titulo">Preço do produto</label>
-                                <input type="text" inputmode="numeric" data-type="price" class="campo__entrada" required>
-                                <label for class="campo__titulo">Descrição do produto</label>
-                                <textarea name="" id="" cols="1" rows="3" class="campo__entrada campo__entrada--descricao" required></textarea>
+                            <div class="container__campo">
+                                <label for="" class="campo__seletor--label">
+                                    <select onchange="this.dataset.select = this.value;" id="categoria-produto" class="campo__seletor--select" placeholder="Selecione uma categoria" required>
+                                        <option value="" selected disabled hidden>Selecione uma categoria</option>
+                                        <option value="star-wars">Star Wars</option>
+                                        <option value="console">Consoles</option>
+                                        <option value="diversos">Diversos</option>
+                                    </select>
+                                    <span class="campo__seletor--titulo">Selecione uma categoria</span>
+                                </label>
+                            </div>
+                            <div class="container__campo">
+                                <input name="nome-produto" id="nome-produto" class="campo__entrada" type="text" placeholder="Nome do produto" data-type="nome-produto" required>
+                                <label for="nome-produto" class="campo__label">Nome do produto</label>
+                            </div>
+                            <div class="container__campo">
+                                <input name="preco-produto" id="preco-produto" class="campo__entrada" type="text" inputmode="numeric" placeholder="Preço do produto" data-type="preco-produto" required>
+                                <label for="preco-produto" class="campo__label">Preço do produto</label>
+                            </div>
+                            <div class="container__campo">
+                                <textarea name="descricao-produto" id="descricao-produto" cols="1" rows="3" class="campo__entrada campo__entrada--descricao" placeholder="Descrição do produto" data-type="descricao-produto" required></textarea>
+                                <label for="descricao-produto" class="campo__label">Descrição do produto</label>
                             </div>
                             <button class="adicionar-produto__botao botao__opaco botao">Adicionar produto</button>
                         </fieldset>
@@ -98,16 +106,18 @@
                 </div>
                 <!-- Formulário de contato -->
                 <div class="rodape__contato">
-                    <form action="#">
-                        <legend class="contato__titulo">Fale conosco</legend>
-                        <div class="container__contato container__contato--nome">
-                            <label for="nome" class="input__titulo input__titulo--nome">Nome</label>
-                            <input id="nome" type="text" class="input__conteudo input__conteudo--nome" required>
-                        </div>
-                        <div class="container__contato container__contato--mensagem">
-                            <label for="mensagem" class="input__titulo input__titulo--mensagem">Escreva sua mensagem</label>
-                            <textarea id="mensagem" cols="1" rows="2" class="input__conteudo input__conteudo--mensagem" required></textarea>
-                        </div>
+                    <form class="contato__formulario" action="#">
+                        <fieldset>
+                            <legend class="contato__titulo">Fale conosco</legend>
+                            <div class="container__contato container__contato--nome">
+                                <input name="nome" id="nome" class="input__conteudo input__conteudo--nome" type="text" placeholder="Nome" data-type="nome" required>
+                                <label for="nome" class="input__label input__label--nome">Nome</label>
+                            </div>
+                            <div class="container__contato container__contato--mensagem">
+                                <textarea name="mensagem" id="mensagem" class="input__conteudo input__conteudo--mensagem" placeholder="Escreva sua mensagem" data-type="mensagem" cols="1" rows="2" required></textarea>
+                                <label for="mensagem" class="input__label input__label--mensagem">Escreva sua mensagem</label>
+                            </div>
+                        </fieldset>
                         <button class="formulario__botao botao__opaco botao" type="submit">Enviar mensagem</button>
                     </form>
                 </div>

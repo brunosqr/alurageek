@@ -1,14 +1,14 @@
 /* Cabeçalho */
 .container__cabecalho {
     padding: 0 1rem;
-    height: 72px;
+    height: 4.5rem;
     justify-content: space-between;
 }
 
 .cabecalho__logo {
     display: flex;
-    width: 100px;
-    height: 28px;
+    width: 6.25rem;
+    height: 1.75rem;
 }
 
 .cabecalho__barra-pesquisa {
@@ -16,12 +16,13 @@
 }
 
 .botao__transparente--login {
-    cursor: pointer;
-    width: 131px;
+    height: 2.4rem;
+    width: 8.2rem;
 }
 
 .botao__transparente--admin {
-    width: 164px;
+    height: 2.4rem;
+    width: 10.25rem;
 }
 
 .cabecalho__icone-lupa {
@@ -51,7 +52,7 @@
         color: var(--cor-cinza-claro);
         display: flex;
         font-family: var(--fonte-padrao);
-        font-size: 14px;
+        font-size: .875rem;
         font-weight: 400;
         margin-left: 2rem;
         padding: .75rem 1rem;
@@ -60,7 +61,7 @@
     }
 
     .botao__transparente--login {
-        width: 164px;
+        width: 10.25rem;
     }
 
     .cabecalho__icone-lupa {
@@ -71,7 +72,7 @@
 @media screen and (min-width: 1440px) {
     
     .cabecalho {
-        height: 115px;
+        height: 7.18rem;
     }
 
     .container__cabecalho {
@@ -80,11 +81,21 @@
     }
 
     .cabecalho__logo {
-        height: 50px;
-        width: 176px;
+        height: 3.125rem;
+        width: 11rem;
     }
 
     .cabecalho__barra-pesquisa {
         width: 28vw;
+    }
+
+    .botao__transparente--login {
+        height: 3.1rem;
+        width: 11.25rem;
+    }
+
+    .botao__transparente--admin {
+        height: 3.0635rem;
+        width: 11.1875rem;
     }
 }

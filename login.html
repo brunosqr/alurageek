@@ -36,10 +36,14 @@
                     <form class="login__formulario" action="todos-produtos.html">
                         <fieldset>
                             <legend class="login__titulo">Iniciar Sessão</legend>
-                            <label for="login__email" class="login__input">Escreva seu email</label>
-                            <input id="login__email" class="login__campo" type="email" placeholder="Escreva seu email" required>
-                            <label for="login__senha" class="login__input"></label>
-                            <input id="login__senha" class="login__campo" type="password" placeholder="Escreva sua senha" required>
+                            <div class="container__login--campo">
+                                <input name="email" id="login__email" class="login__campo" type="email" placeholder="Escreva seu email" data-type="email" required>
+                                <label for="login__email" class="login__label">Escreva seu email</label>
+                            </div>
+                            <div class="container__login--campo">
+                                <input name="senha" id="login__senha" class="login__campo" type="password" placeholder="Escreva sua senha" data-type="password" required>
+                                <label for="login__senha" class="login__label">Escreva sua senha</label>
+                            </div>
                             <button class="login__botao botao__opaco botao" type="submit">Entrar</button>
                         </fieldset>
                     </form>
@@ -78,16 +82,18 @@
                 </div>
                 <!-- Formulário de contato -->
                 <div class="rodape__contato">
-                    <form action="#">
-                        <legend class="contato__titulo">Fale conosco</legend>
-                        <div class="container__contato container__contato--nome">
-                            <label for="nome" class="input__titulo input__titulo--nome">Nome</label>
-                            <input id="nome" type="text" class="input__conteudo input__conteudo--nome" required>
-                        </div>
-                        <div class="container__contato container__contato--mensagem">
-                            <label for="mensagem" class="input__titulo input__titulo--mensagem">Escreva sua mensagem</label>
-                            <textarea id="mensagem" cols="1" rows="2" class="input__conteudo input__conteudo--mensagem" required></textarea>
-                        </div>
+                    <form class="contato__formulario" action="#">
+                        <fieldset>
+                            <legend class="contato__titulo">Fale conosco</legend>
+                            <div class="container__contato container__contato--nome">
+                                <input name="nome" id="nome" class="input__conteudo input__conteudo--nome" type="text" placeholder="Nome" data-type="nome" required>
+                                <label for="nome" class="input__label input__label--nome">Nome</label>
+                            </div>
+                            <div class="container__contato container__contato--mensagem">
+                                <textarea name="mensagem" id="mensagem" class="input__conteudo input__conteudo--mensagem" placeholder="Escreva sua mensagem" data-type="mensagem" cols="1" rows="2" required></textarea>
+                                <label for="mensagem" class="input__label input__label--mensagem">Escreva sua mensagem</label>
+                            </div>
+                        </fieldset>
                         <button class="formulario__botao botao__opaco botao" type="submit">Enviar mensagem</button>
                     </form>
                 </div>
