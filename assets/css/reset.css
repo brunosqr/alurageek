@@ -46,8 +46,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* select {
-    appearance: none;
+input[type='search']::-webkit-search-cancel-button {
     -webkit-appearance: none;
-    -moz-appearance: none;
-} */
+}
+/* Gambiarra pra corrigir a mudança do background-color dos inputs ao usar sugestões do Chrome */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}

@@ -1,277 +1,313 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home | AluraGeek</title>
-        <link rel="icon" href="assets/img/icones/favicon.svg" type="image/x-icon">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | AluraGeek</title>
+    <link rel="icon" href="assets/img/icones/favicon.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
 
-    <body>
-        <!-- Cabeçalho -->
-        <header class="cabecalho">
-            <div class="container container__cabecalho">
-                <div class="container__cabecalho--barra-pesquisa">
-                    <a class="cabecalho__logo" href="./index.html">
-                        <img src="assets/img/logo.svg" alt="Logo da AluraGeek">
-                    </a>
-                    <input id="" class="cabecalho__barra-pesquisa" type="search" name="" placeholder="O que deseja encontrar?">
+<body>
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <div class="container container__cabecalho">
+            <a class="cabecalho__logo" href="./index.html">
+                <img src="assets/img/logo.svg" alt="Logo da AluraGeek">
+            </a>
+            <input id="" class="cabecalho__barra-pesquisa" type="search" name="" placeholder="O que deseja encontrar?">
+            <a class="botao__cabecalho botao__transparente botao__transparente--login botao" href="login.html">Login</a>
+            <button class="cabecalho__icone-pesquisa" data-pesquisa></button>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+
+        <!-- Banner -->
+        <section class="banner">
+            <div class="container container__banner">
+                <div class="banner__textos">
+                    <h2 class="banner__titulo">Dezembro Promocional</h2>
+                    <h3 class="banner__subtitulo">Produtos selecionados com 33% de desconto</h3>
                 </div>
-                <a class="botao__transparente botao__transparente--login botao" href="login.html">Login</a>
-                <img class="cabecalho__icone-lupa" src="assets/img/icones/icone-lupa.svg" alt="Pesquisar produtos">
+                <a class="banner__botao botao__opaco botao" href="#consoles">Ver consoles</a>
             </div>
-        </header>
+        </section>
 
-        <!-- Conteúdo principal -->
-        <main>
+        <!-- Produtos -->
+        <section class="produtos">
 
-            <!-- Banner -->
-            <section class="banner">
-                <div class="container container__banner">
-                    <div class="banner__textos">
-                        <h2 class="banner__titulo">Dezembro Promocional</h2>
-                        <h3 class="banner__subtitulo">Produtos selecionados com 33% de desconto</h3>
-                    </div>
-                    <a class="banner__botao botao__opaco botao" href="#consoles">Ver consoles</a>
-                </div>
-            </section>
-
-            <!-- Produtos -->
-            <section class="produtos">
-
-                <!-- Produtos: Star Wars -->
-                <div class="container container__produtos">
-                    <div class="produtos__cabecalho">
-                        <h4 class="produtos__titulo">Star Wars</h4>
-                        <a class="produtos__ver-tudo" href="todos-produtos.html">Ver tudo</a>
-                    </div>
-                    <div class="produtos__cards">
-                        <div class="produto">
-                            <img class="produto__imagem" src="./assets/img/produtos-star-wars/star-wars1.png" alt="">
-                            <div class="produto__textos">
-                                <p class="produto__textos--titulo">Produto XYZ</p>
-                                <p class="produto__textos--preco">R$60,00</p>
-                                <a class="produto__textos--ver-produto" href="#">Ver produto</a>
-                            </div>
-                        </div>
-                        <div class="produto">
-                            <img class="produto__imagem" src="./assets/img/produtos-star-wars/star-wars2.png" alt="">
-                            <div class="produto__textos">
-                                <p class="produto__textos--titulo">Produto XYZ</p>
-                                <p class="produto__textos--preco">R$60,00</p>
-                                <a class="produto__textos--ver-produto" href="#">Ver produto</a>
-                            </div>
-                        </div>
-                        <div class="produto">
-                            <img class="produto__imagem" src="./assets/img/produtos-star-wars/star-wars3.png" alt="">
-                            <div class="produto__textos">
-                                <p class="produto__textos--titulo">Produto XYZ</p>
-                                <p class="produto__textos--preco">R$60,00</p>
-                                <a class="produto__textos--ver-produto" href="#">Ver produto</a>
-                            </div>
-                        </div>
-                        <div class="produto">
-                            <img class="produto__imagem" src="./assets/img/produtos-star-wars/star-wars4.png" alt="">
-                            <div class="produto__textos">
-                                <p class="produto__textos--titulo">Produto XYZ</p>
-                                <p class="produto__textos--preco">R$60,00</p>
-                                <a class="produto__textos--ver-produto" href="#">Ver produto</a>
-                            </div>
-                        </div>
-                        <div class="produto">
-                            <img class="produto__imagem" src="./assets/img/produtos-star-wars/star-wars5.png" alt="">
-                            <div class="produto__textos">
-                                <p class="produto__textos--titulo">Produto XYZ</p>
-                                <p class="produto__textos--preco">R$60,00</p>
-                                <a class="produto__textos--ver-produto" href="#">Ver produto</a>
-                            </div>
-                        </div>
-                        <div class="produto">
-                            <img class="produto__imagem" src="./assets/img/produtos-star-wars/star-wars6.png" alt="">
-                            <div class="produto__textos">
-                                <p class="produto__textos--titulo">Produto XYZ</p>
-                                <p class="produto__textos--preco">R$60,00</p>
-                                <a class="produto__textos--ver-produto" href="#">Ver produto</a>
-                            </div>
-                        </div>
-                    </div>
+            <!-- Produtos: Star Wars -->
+            <div class="container container__produtos">
+                <div class="produtos__cabecalho">
+                    <h4 class="produtos__titulo">Star Wars</h4>
+                    <a class="produtos__ver-tudo" href="#">Ver tudo</a>
                 </div>
 
-                <!-- Produtos: Consoles -->
-                <div class="container container__produtos" id="consoles">
-                    <div class="produtos__cabecalho">
-                        <h4 class="produtos__titulo">Consoles</h4>
-                        <a class="produtos__ver-tudo" href="todos-produtos.html">Ver tudo</a>
-                    </div>
-                    <div class="produtos__cards">
-                        <div class="produto">
-                            <img class="produto__imagem" src="./assets/img/produtos-consoles/consoles1.png" alt="">
-                            <div class="produto__textos">
-                                <p class="produto__textos--titulo">Controle XYZ</p>
-                                <p class="produto__textos--preco">R$60,00</p>
-                                <a class="produto__textos--ver-produto" href="#">Ver produto</a>
-                            </div>
-                        </div>
-                        <div class="produto">
-                            <img class="produto__imagem" src="./assets/img/produtos-consoles/consoles2.png" alt="">
-                            <div class="produto__textos">
-                                <p class="produto__textos--titulo">Controle e console XYZ</p>
-                                <p class="produto__textos--preco">R$60,00</p>
-                                <a class="produto__textos--ver-produto" href="#">Ver produto</a>
-                            </div>
-                        </div>
-                        <div class="produto">
-                            <img class="produto__imagem" src="./assets/img/produtos-consoles/consoles3.png" alt="">
-                            <div class="produto__textos">
-                                <p class="produto__textos--titulo">Console XYZ</p>
-                                <p class="produto__textos--preco">R$60,00</p>
-                                <a class="produto__textos--ver-produto" href="#">Ver produto</a>
-                            </div>
-                        </div>
-                        <div class="produto">
-                            <img class="produto__imagem" src="./assets/img/produtos-consoles/consoles4.png" alt="">
-                            <div class="produto__textos">
-                                <p class="produto__textos--titulo">Controle XYZ</p>
-                                <p class="produto__textos--preco">R$60,00</p>
-                                <a class="produto__textos--ver-produto" href="#">Ver produto</a>
-                            </div>
-                        </div>
-                        <div class="produto">
-                            <img class="produto__imagem" src="./assets/img/produtos-consoles/consoles5.png" alt="">
-                            <div class="produto__textos">
-                                <p class="produto__textos--titulo">Console XYZ</p>
-                                <p class="produto__textos--preco">R$60,00</p>
-                                <a class="produto__textos--ver-produto" href="#">Ver produto</a>
-                            </div>
-                        </div>
-                        <div class="produto">
-                            <img class="produto__imagem" src="./assets/img/produtos-consoles/consoles6.png" alt="">
-                            <div class="produto__textos">
-                                <p class="produto__textos--titulo">Game Boy Color</p>
-                                <p class="produto__textos--preco">R$60,00</p>
-                                <a class="produto__textos--ver-produto" href="#">Ver produto</a>
-                            </div>
+                <div class="produtos__cards">
+                    <div class="produto">
+                        <img class="produto__imagem" src="./assets/img/produtos-star-wars/star-wars1.png" alt="">
+                        <div class="produto__textos">
+                            <p class="produto__textos--titulo">Produto XYZ</p>
+                            <p class="produto__textos--preco">R$60,00</p>
+                            <a class="produto__textos--ver-produto" href="#">Ver produto</a>
                         </div>
                     </div>
-                </div>
 
-                <!-- Produtos: Diversos -->
-                <div class="container container__produtos">
-                    <div class="produtos__cabecalho">
-                        <h4 class="produtos__titulo">Diversos</h4>
-                        <a class="produtos__ver-tudo" href="todos-produtos.html">Ver tudo</a>
-                    </div>
-                    <div class="produtos__cards">
-                        <div class="produto">
-                            <img class="produto__imagem" src="./assets/img/produtos-diversos/diversos1.png" alt="">
-                            <div class="produto__textos">
-                                <p class="produto__textos--titulo">Camisa Atari</p>
-                                <p class="produto__textos--preco">R$60,00</p>
-                                <a class="produto__textos--ver-produto" href="#">Ver produto</a>
-                            </div>
-                        </div>
-                        <div class="produto">
-                            <img class="produto__imagem" src="./assets/img/produtos-diversos/diversos2.png" alt="">
-                            <div class="produto__textos">
-                                <p class="produto__textos--titulo">Camisa SNES</p>
-                                <p class="produto__textos--preco">R$60,00</p>
-                                <a class="produto__textos--ver-produto" href="#">Ver produto</a>
-                            </div>
-                        </div>
-                        <div class="produto">
-                            <img class="produto__imagem" src="./assets/img/produtos-diversos/diversos3.png" alt="">
-                            <div class="produto__textos">
-                                <p class="produto__textos--titulo">Produto XYZ</p>
-                                <p class="produto__textos--preco">R$60,00</p>
-                                <a class="produto__textos--ver-produto" href="#">Ver produto</a>
-                            </div>
-                        </div>
-                        <div class="produto">
-                            <img class="produto__imagem" src="./assets/img/produtos-diversos/diversos4.png" alt="">
-                            <div class="produto__textos">
-                                <p class="produto__textos--titulo">Produto XYZ</p>
-                                <p class="produto__textos--preco">R$60,00</p>
-                                <a class="produto__textos--ver-produto" href="#">Ver produto</a>
-                            </div>
-                        </div>
-                        <div class="produto">
-                            <img class="produto__imagem" src="./assets/img/produtos-diversos/diversos5.png" alt="">
-                            <div class="produto__textos">
-                                <p class="produto__textos--titulo">Produto XYZ</p>
-                                <p class="produto__textos--preco">R$60,00</p>
-                                <a class="produto__textos--ver-produto" href="#">Ver produto</a>
-                            </div>
-                        </div>
-                        <div class="produto">
-                            <img class="produto__imagem" src="./assets/img/produtos-diversos/diversos6.png" alt="">
-                            <div class="produto__textos">
-                                <p class="produto__textos--titulo">Produto XYZ</p>
-                                <p class="produto__textos--preco">R$60,00</p>
-                                <a class="produto__textos--ver-produto" href="#">Ver produto</a>
-                            </div>
+                    <div class="produto">
+                        <img class="produto__imagem" src="./assets/img/produtos-star-wars/star-wars2.png" alt="">
+                        <div class="produto__textos">
+                            <p class="produto__textos--titulo">Produto XYZ</p>
+                            <p class="produto__textos--preco">R$60,00</p>
+                            <a class="produto__textos--ver-produto" href="#">Ver produto</a>
                         </div>
                     </div>
-                </div>
-            </section>
-        </main>
 
-        <!-- Rodapé -->
-        <footer class="rodape">
-            <div class="container__rodape">
-                <div class="container__logo-lista">
-                    <!-- Logo -->
-                    <img class="rodape__logo" src="./assets/img/logo.svg" alt="Logo da AluraGeek">
-                    <!-- Lista de links -->
-                    <ul class="rodape__lista">
-                        <li class="lista__item">
-                            <a class="lista__link" href="#">Quem somos nós</a>
-                        </li>
-                        <li class="lista__item">
-                            <a class="lista__link" href="#">Política de privacidade</a>
-                        </li>
-                        <li class="lista__item">
-                            <a class="lista__link" href="#">Programa fidelidade</a>
-                        </li>
-                        <li class="lista__item">
-                            <a class="lista__link" href="#">Nossas lojas</a>
-                        </li>
-                        <li class="lista__item">
-                            <a class="lista__link" href="#">Quero ser franqueado</a>
-                        </li>
-                        <li class="lista__item">
-                            <a class="lista__link" href="#">Anuncie aqui</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Formulário de contato -->
-                <div class="rodape__contato">
-                    <form class="contato__formulario" action="#">
-                        <fieldset>
-                            <legend class="contato__titulo">Fale conosco</legend>
-                            <div class="container__contato container__contato--nome">
-                                <input name="nome" id="nome" class="input__conteudo input__conteudo--nome" type="text" placeholder="Nome" data-type="nome" required>
-                                <label for="nome" class="input__label input__label--nome">Nome</label>
-                            </div>
-                            <div class="container__contato container__contato--mensagem">
-                                <textarea name="mensagem" id="mensagem" class="input__conteudo input__conteudo--mensagem" placeholder="Escreva sua mensagem" data-type="mensagem" cols="1" rows="2" required></textarea>
-                                <label for="mensagem" class="input__label input__label--mensagem">Escreva sua mensagem</label>
-                            </div>
-                            <button class="formulario__botao botao__opaco botao" type="submit">Enviar mensagem</button>
-                        </fieldset>
-                    </form>
+                    <div class="produto">
+                        <img class="produto__imagem" src="./assets/img/produtos-star-wars/star-wars3.png" alt="">
+                        <div class="produto__textos">
+                            <p class="produto__textos--titulo">Produto XYZ</p>
+                            <p class="produto__textos--preco">R$60,00</p>
+                            <a class="produto__textos--ver-produto" href="#">Ver produto</a>
+                        </div>
+                    </div>
+
+                    <div class="produto">
+                        <img class="produto__imagem" src="./assets/img/produtos-star-wars/star-wars4.png" alt="">
+                        <div class="produto__textos">
+                            <p class="produto__textos--titulo">Produto XYZ</p>
+                            <p class="produto__textos--preco">R$60,00</p>
+                            <a class="produto__textos--ver-produto" href="#">Ver produto</a>
+                        </div>
+                    </div>
+
+                    <div class="produto">
+                        <img class="produto__imagem" src="./assets/img/produtos-star-wars/star-wars5.png" alt="">
+                        <div class="produto__textos">
+                            <p class="produto__textos--titulo">Produto XYZ</p>
+                            <p class="produto__textos--preco">R$60,00</p>
+                            <a class="produto__textos--ver-produto" href="#">Ver produto</a>
+                        </div>
+                    </div>
+
+                    <div class="produto">
+                        <img class="produto__imagem" src="./assets/img/produtos-star-wars/star-wars6.png" alt="">
+                        <div class="produto__textos">
+                            <p class="produto__textos--titulo">Produto XYZ</p>
+                            <p class="produto__textos--preco">R$60,00</p>
+                            <a class="produto__textos--ver-produto" href="#">Ver produto</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
-            <div class="rodape__desenvolvedor">
-                <p class="rodape__desenvolvedor--nome">Desenvolvido por Bruno Siqueira</p>
-                <p class="rodape__desenvolvedor--ano">2022</p>
+
+            <!-- Produtos: Consoles -->
+            <div class="container container__produtos" id="consoles">
+                <div class="produtos__cabecalho">
+                    <h4 class="produtos__titulo">Consoles</h4>
+                    <a class="produtos__ver-tudo" href="#">Ver tudo</a>
+                </div>
+
+                <div class="produtos__cards">
+                    <div class="produto">
+                        <img class="produto__imagem" src="./assets/img/produtos-consoles/consoles1.png" alt="">
+                        <div class="produto__textos">
+                            <p class="produto__textos--titulo">Controle XYZ</p>
+                            <p class="produto__textos--preco">R$60,00</p>
+                            <a class="produto__textos--ver-produto" href="#">Ver produto</a>
+                        </div>
+                    </div>
+
+                    <div class="produto">
+                        <img class="produto__imagem" src="./assets/img/produtos-consoles/consoles2.png" alt="">
+                        <div class="produto__textos">
+                            <p class="produto__textos--titulo">Controle e console XYZ</p>
+                            <p class="produto__textos--preco">R$60,00</p>
+                            <a class="produto__textos--ver-produto" href="#">Ver produto</a>
+                        </div>
+                    </div>
+
+                    <div class="produto">
+                        <img class="produto__imagem" src="./assets/img/produtos-consoles/consoles3.png" alt="">
+                        <div class="produto__textos">
+                            <p class="produto__textos--titulo">Console XYZ</p>
+                            <p class="produto__textos--preco">R$60,00</p>
+                            <a class="produto__textos--ver-produto" href="#">Ver produto</a>
+                        </div>
+                    </div>
+
+                    <div class="produto">
+                        <img class="produto__imagem" src="./assets/img/produtos-consoles/consoles4.png" alt="">
+                        <div class="produto__textos">
+                            <p class="produto__textos--titulo">Controle XYZ</p>
+                            <p class="produto__textos--preco">R$60,00</p>
+                            <a class="produto__textos--ver-produto" href="#">Ver produto</a>
+                        </div>
+                    </div>
+
+                    <div class="produto">
+                        <img class="produto__imagem" src="./assets/img/produtos-consoles/consoles5.png" alt="">
+                        <div class="produto__textos">
+                            <p class="produto__textos--titulo">Console XYZ</p>
+                            <p class="produto__textos--preco">R$60,00</p>
+                            <a class="produto__textos--ver-produto" href="#">Ver produto</a>
+                        </div>
+                    </div>
+
+                    <div class="produto">
+                        <img class="produto__imagem" src="./assets/img/produtos-consoles/consoles6.png" alt="">
+                        <div class="produto__textos">
+                            <p class="produto__textos--titulo">Game Boy Color</p>
+                            <p class="produto__textos--preco">R$60,00</p>
+                            <a class="produto__textos--ver-produto" href="#">Ver produto</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </footer>
-    </body>
+
+            <!-- Produtos: Diversos -->
+            <div class="container container__produtos">
+                <div class="produtos__cabecalho">
+                    <h4 class="produtos__titulo">Diversos</h4>
+                    <a class="produtos__ver-tudo" href="#">Ver tudo</a>
+                </div>
+
+                <div class="produtos__cards">
+                    <div class="produto">
+                        <img class="produto__imagem" src="./assets/img/produtos-diversos/diversos1.png" alt="">
+                        <div class="produto__textos">
+                            <p class="produto__textos--titulo">Camisa Atari</p>
+                            <p class="produto__textos--preco">R$60,00</p>
+                            <a class="produto__textos--ver-produto" href="#">Ver produto</a>
+                        </div>
+                    </div>
+
+                    <div class="produto">
+                        <img class="produto__imagem" src="./assets/img/produtos-diversos/diversos2.png" alt="">
+                        <div class="produto__textos">
+                            <p class="produto__textos--titulo">Camisa SNES</p>
+                            <p class="produto__textos--preco">R$60,00</p>
+                            <a class="produto__textos--ver-produto" href="#">Ver produto</a>
+                        </div>
+                    </div>
+
+                    <div class="produto">
+                        <img class="produto__imagem" src="./assets/img/produtos-diversos/diversos3.png" alt="">
+                        <div class="produto__textos">
+                            <p class="produto__textos--titulo">Produto XYZ</p>
+                            <p class="produto__textos--preco">R$60,00</p>
+                            <a class="produto__textos--ver-produto" href="#">Ver produto</a>
+                        </div>
+                    </div>
+
+                    <div class="produto">
+                        <img class="produto__imagem" src="./assets/img/produtos-diversos/diversos4.png" alt="">
+                        <div class="produto__textos">
+                            <p class="produto__textos--titulo">Produto XYZ</p>
+                            <p class="produto__textos--preco">R$60,00</p>
+                            <a class="produto__textos--ver-produto" href="#">Ver produto</a>
+                        </div>
+                    </div>
+
+                    <div class="produto">
+                        <img class="produto__imagem" src="./assets/img/produtos-diversos/diversos5.png" alt="">
+                        <div class="produto__textos">
+                            <p class="produto__textos--titulo">Produto XYZ</p>
+                            <p class="produto__textos--preco">R$60,00</p>
+                            <a class="produto__textos--ver-produto" href="#">Ver produto</a>
+                        </div>
+                    </div>
+
+                    <div class="produto">
+                        <img class="produto__imagem" src="./assets/img/produtos-diversos/diversos6.png" alt="">
+                        <div class="produto__textos">
+                            <p class="produto__textos--titulo">Produto XYZ</p>
+                            <p class="produto__textos--preco">R$60,00</p>
+                            <a class="produto__textos--ver-produto" href="#">Ver produto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="container__rodape">
+            <div class="container__logo-lista">
+
+                <!-- Logo -->
+                <img class="rodape__logo" src="./assets/img/logo.svg" alt="Logo da AluraGeek">
+
+                <!-- Lista de links -->
+                <ul class="rodape__lista">
+                    <li class="lista__item">
+                        <a class="lista__link" href="#">Quem somos nós</a>
+                    </li>
+
+                    <li class="lista__item">
+                        <a class="lista__link" href="#">Política de privacidade</a>
+                    </li>
+
+                    <li class="lista__item">
+                        <a class="lista__link" href="#">Programa fidelidade</a>
+                    </li>
+
+                    <li class="lista__item">
+                        <a class="lista__link" href="#">Nossas lojas</a>
+                    </li>
+
+                    <li class="lista__item">
+                        <a class="lista__link" href="#">Quero ser franqueado</a>
+                    </li>
+
+                    <li class="lista__item">
+                        <a class="lista__link" href="#">Anuncie aqui</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Formulário de contato -->
+            <div class="rodape__contato">
+                <form class="contato__formulario" id="contato__formulario">
+                    <fieldset>
+                        <legend class="contato__titulo">Fale conosco</legend>
+
+                        <div class="container__contato container__contato--nome">
+                            <input name="nome" id="contato__nome" class="input__conteudo input__conteudo--nome" type="text" placeholder="Nome" data-tipo="contatoNome" maxlength="40" required>
+                            <label for="contato__nome" class="input__label input__label--nome">Nome</label>
+
+                            <span class="campo__erro"></span>
+                        </div>
+
+                        <div class="container__contato container__contato--mensagem">
+                            <textarea name="mensagem" id="contato__mensagem" class="input__conteudo input__conteudo--mensagem" placeholder="Escreva sua mensagem" data-tipo="contatoMensagem" cols="1" rows="2" maxlength="120" required></textarea>
+                            <label for="contato__mensagem" class="input__label input__label--mensagem">Escreva sua mensagem</label>
+                            
+                            <span class="campo__erro"></span>
+                        </div>
+
+                        <span class="campo__aviso"></span>
+
+                        <button class="formulario__botao botao__opaco botao" type="submit">Enviar mensagem</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Informações do desenvolvedor -->
+        <div class="rodape__desenvolvedor">
+            <p class="rodape__desenvolvedor--nome">Desenvolvido por Bruno Siqueira</p>
+            <p class="rodape__desenvolvedor--ano">2022</p>
+        </div>
+    </footer>
+    
+    <script src="./assets/js/pesquisa.js"></script>
+    <script src="./assets/js/contato.js" type="module"></script>
+</body>
 </html>

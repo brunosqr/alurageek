@@ -2,19 +2,17 @@
     background-color: var(--cor-cinza-fundo);
     display: flex;
     justify-content: center;
-}
-
-.container__adicionar-produto {
     padding: 1rem;
 }
 
 .adicionar-produto__formulario {
-    width: 100%;
+    width: 44rem;
 }
 
 .adicionar-produto__titulo {
     font-size: 1.375rem;
     font-weight: 700;
+    line-height: 1.625rem;
     margin-bottom: 1rem;
 }
 
@@ -26,8 +24,8 @@
     width: auto;
 }
 
-.container__adicionar-imagem span {
-    margin: .75rem;
+.adicionar-imagem__drag-and-drop--input {
+    display: none;
 }
 
 .adicionar-imagem__drag-and-drop {
@@ -39,6 +37,21 @@
     display: inline-block;
     padding: 5rem 2rem 2rem 2rem;
     text-align: center;
+}
+
+.adicionar-imagem__drag-and-drop.active {
+    background-color: var(--cor-cinza-);
+    border: 1px solid var(--cor-cinza-box-shadow);
+}
+
+.adicionar-imagem__drag-and-drop img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.container__adicionar-imagem span {
+    margin: .75rem;
 }
 
 .adicionar-imagem__dispositivo {
@@ -93,7 +106,7 @@
     border-bottom: 1px solid var(--cor-cinza-box-shadow);
     border-radius: 4px 4px 4px 4px;
     box-sizing: border-box;
-    color: var(--cor-cinza-claro);
+    color: var(--cor-cinza-padrao);
     display: inline-block;
     height: 4.5rem;
     padding: 1.5rem .75rem 1.25rem .5rem;
@@ -130,8 +143,6 @@ select[data-select]+ .campo__seletor--titulo {
     top: .65rem;
     transition: all .25s;
 }
-
-
 
 .campo__entrada {
     border-bottom: 1px solid var(--cor-cinza-box-shadow);
@@ -170,10 +181,19 @@ select[data-select]+ .campo__seletor--titulo {
     resize: none;
 }
 
+.campo__invalido .campo__seletor--select {
+    border: 1px solid var(--cor-erro);
+}
+
+.campo__invalido .campo__entrada {
+    border: 1px solid var(--cor-erro);
+}
+
 .adicionar-produto__botao {
     background-color: var(--cor-azul);
     border: 1px solid var(--cor-azul);
     color: var(--cor-branco);
+    font-weight: 400;
     height: 3.1875rem;
     width: 100%;
 }
@@ -183,9 +203,6 @@ select[data-select]+ .campo__seletor--titulo {
     .adicionar-produto {
         display: flex;
         justify-content: center;
-    }
-    
-    .container__adicionar-produto {
         padding: 2.5rem 2rem 2rem;
     }
     
@@ -201,13 +218,9 @@ select[data-select]+ .campo__seletor--titulo {
 
 @media screen and (min-width: 1440px) {
     
-    .container__adicionar-produto {
+    .adicionar-produto {
         padding: 4rem 0;
-        width: 34.9375rem;
-    }
-
-    .container__adicionar-imagem {
-        width: 34.9375rem;
+        /* width: 34.9375rem; */
     }
 
     .adicionar-produto__titulo {

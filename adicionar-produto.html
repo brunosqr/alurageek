@@ -1,132 +1,164 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Adicionar produto | AluraGeek</title>
-        <link rel="icon" href="assets/img/icones/favicon.svg" type="image/x-icon">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar produto | AluraGeek</title>
+    <link rel="icon" href="assets/img/icones/favicon.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
 
-    <body>
-        
-        <!-- Cabeçalho -->
-        <header class="cabecalho">
-            <div class="container container__cabecalho">
-                <div class="container__cabecalho--barra-pesquisa">
-                    <a class="cabecalho__logo" href="./index.html">
-                        <img src="assets/img/logo.svg" alt="Logo da AluraGeek">
-                    </a>
-                    <input id="cabecalho__login-botao botao" class="cabecalho__barra-pesquisa" type="search" name="" placeholder="O que deseja encontrar?">
-                </div>
-                <a class="botao__transparente botao__transparente--admin botao" href="todos-produtos.html">Menu administrador</a>
-                <img class="cabecalho__icone-lupa" src="assets/img/icones/icone-lupa.svg" alt="Pesquisar produtos">
+<body>
+    
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <div class="container container__cabecalho">
+            <a class="cabecalho__logo" href="./index.html">
+                <img src="assets/img/logo.svg" alt="Logo da AluraGeek">
+            </a>
+            <input id="" class="cabecalho__barra-pesquisa" type="search" name="" placeholder="O que deseja encontrar?">
+            <a class="botao__cabecalho botao__transparente botao__transparente--admin botao" href="menu-admin.html">Menu administrador</a>
+            <button class="cabecalho__icone-pesquisa" data-pesquisa></button>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+
+        <!-- Adicionar produto -->
+        <section class="container adicionar-produto">
+                <form class="adicionar-produto__formulario" action="#">
+                    <fieldset>
+                        <legend class="adicionar-produto__titulo">Adicionar novo produto</legend>
+
+                        <div class="container__adicionar-imagem">
+                            <input type="text" accept="image/*" class="adicionar-imagem__drag-and-drop--input">
+                            <div class="adicionar-imagem__drag-and-drop">
+                                <p class="adicionar-imagem__drag-and-drop--texto" id="texto">Arraste para adicionar uma imagem para o produto</p>
+                            </div>
+
+                            <span>Ou</span>
+
+                            <label for="adicionar-imagem" class="adicionar-imagem__dispositivo">Procure no seu dispositivo</label>
+                            <input type="file" accept="image/*" id="adicionar-imagem" class="adicionar-imagem__dispositivo--input">
+
+                            <span class="campo__erro"></span>
+                        </div>
+
+                        <div class="container__campo">
+                            <label for="produto__categoria" class="campo__seletor--label">
+                                <select onchange="this.dataset.select = this.value;" id="produto__categoria" class="campo__seletor--select" placeholder="Selecione uma categoria" required>
+                                    <option value="" selected disabled hidden>Selecione uma categoria</option>
+                                    <option value="star-wars">Star Wars</option>
+                                    <option value="console">Consoles</option>
+                                    <option value="diversos">Diversos</option>
+                                </select>
+                                <span class="campo__seletor--titulo">Selecione uma categoria</span>
+
+                                <span class="campo__erro"></span>
+                            </label>
+                        </div>
+
+                        <div class="container__campo">
+                            <input name="nome-produto" id="produto__nome" class="campo__entrada" type="text" placeholder="Nome do produto" data-tipo="produtoNome" maxlength="20" required>
+                            <label for="produto__nome" class="campo__label">Nome do produto</label>
+
+                            <span class="campo__erro"></span>
+                        </div>
+
+                        <div class="container__campo">
+                            <input name="preco-produto" id="produto__preco" class="campo__entrada" type="text" inputmode="numeric" placeholder="Preço do produto" data-tipo="produtoPreco" maxlength="10" required >
+                            <label for="produto__preco" class="campo__label">Preço do produto</label>
+
+                            <span class="campo__erro"></span>
+                        </div>
+
+                        <div class="container__campo">
+                            <textarea name="descricao-produto" id="produto__descricao" cols="1" rows="3" class="campo__entrada campo__entrada--descricao" placeholder="Descrição do produto" data-tipo="produtoDescricao" maxlength="150" required></textarea>
+                            <label for="produto__descricao" class="campo__label">Descrição do produto</label>
+
+                            <span class="campo__erro"></span>
+                        </div>
+
+                        <span class="campo__aviso">Produto adicionado com sucesso</span>
+
+                        <button class="adicionar-produto__botao botao__opaco botao" type="submit">Adicionar produto</button>
+                    </fieldset>
+                </form>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="container__rodape">
+            <div class="container__logo-lista">
+                <!-- Logo -->
+                <img class="rodape__logo" src="./assets/img/logo.svg" alt="Logo da AluraGeek">
+                <!-- Lista de links -->
+                <ul class="rodape__lista">
+                    <li class="lista__item">
+                        <a class="lista__link" href="#">Quem somos nós</a>
+                    </li>
+                    <li class="lista__item">
+                        <a class="lista__link" href="#">Política de privacidade</a>
+                    </li>
+                    <li class="lista__item">
+                        <a class="lista__link" href="#">Programa fidelidade</a>
+                    </li>
+                    <li class="lista__item">
+                        <a class="lista__link" href="#">Nossas lojas</a>
+                    </li>
+                    <li class="lista__item">
+                        <a class="lista__link" href="#">Quero ser franqueado</a>
+                    </li>
+                    <li class="lista__item">
+                        <a class="lista__link" href="#">Anuncie aqui</a>
+                    </li>
+                </ul>
             </div>
-        </header>
 
-        <!-- Conteúdo principal -->
-        <main>
+            <!-- Formulário de contato -->
+            <div class="rodape__contato">
+                <form class="contato__formulario" id="contato__formulario" action="#">
+                    <fieldset>
+                        <legend class="contato__titulo">Fale conosco</legend>
 
-            <!-- Adicionar produto -->
-            <section class="adicionar-produto">
-                <div class="container container__adicionar-produto">
-                    <form class="adicionar-produto__formulario" action="#">
-                        <fieldset>
-                            <legend class="adicionar-produto__titulo">Adicionar novo produto</legend>
-                            <div class="container__adicionar-imagem">
-                                <div class="adicionar-imagem__drag-and-drop">
-                                    <p class="adicionar-imagem__drag-and-drop--texto">Arraste para adicionar uma imagem para o produto</p>
-                                </div>
-                                <span>Ou</span>
-                                <label for="adicionar-imagem" class="adicionar-imagem__dispositivo">Procure no seu dispositivo</label>
-                                <input type="file" id="adicionar-imagem" class="adicionar-imagem__dispositivo--input" accept="image/*">
-                            </div>
-                            <div class="container__campo">
-                                <label for="" class="campo__seletor--label">
-                                    <select onchange="this.dataset.select = this.value;" id="categoria-produto" class="campo__seletor--select" placeholder="Selecione uma categoria" required>
-                                        <option value="" selected disabled hidden>Selecione uma categoria</option>
-                                        <option value="star-wars">Star Wars</option>
-                                        <option value="console">Consoles</option>
-                                        <option value="diversos">Diversos</option>
-                                    </select>
-                                    <span class="campo__seletor--titulo">Selecione uma categoria</span>
-                                </label>
-                            </div>
-                            <div class="container__campo">
-                                <input name="nome-produto" id="nome-produto" class="campo__entrada" type="text" placeholder="Nome do produto" data-type="nome-produto" required>
-                                <label for="nome-produto" class="campo__label">Nome do produto</label>
-                            </div>
-                            <div class="container__campo">
-                                <input name="preco-produto" id="preco-produto" class="campo__entrada" type="text" inputmode="numeric" placeholder="Preço do produto" data-type="preco-produto" required>
-                                <label for="preco-produto" class="campo__label">Preço do produto</label>
-                            </div>
-                            <div class="container__campo">
-                                <textarea name="descricao-produto" id="descricao-produto" cols="1" rows="3" class="campo__entrada campo__entrada--descricao" placeholder="Descrição do produto" data-type="descricao-produto" required></textarea>
-                                <label for="descricao-produto" class="campo__label">Descrição do produto</label>
-                            </div>
-                            <button class="adicionar-produto__botao botao__opaco botao">Adicionar produto</button>
-                        </fieldset>
-                    </form>
-                </div>
-            </section>
-        </main>
+                        <div class="container__contato container__contato--nome">
+                            <input name="nome" id="contato__nome" class="input__conteudo input__conteudo--nome" type="text" placeholder="Nome" data-tipo="contatoNome" maxlength="40" required>
+                            <label for="contato__nome" class="input__label input__label--nome">Nome</label>
 
-        <!-- Rodapé -->
-        <footer class="rodape">
-            <div class="container__rodape">
-                <div class="container__logo-lista">
-                    <!-- Logo -->
-                    <img class="rodape__logo" src="./assets/img/logo.svg" alt="Logo da AluraGeek">
-                    <!-- Lista de links -->
-                    <ul class="rodape__lista">
-                        <li class="lista__item">
-                            <a class="lista__link" href="#">Quem somos nós</a>
-                        </li>
-                        <li class="lista__item">
-                            <a class="lista__link" href="#">Política de privacidade</a>
-                        </li>
-                        <li class="lista__item">
-                            <a class="lista__link" href="#">Programa fidelidade</a>
-                        </li>
-                        <li class="lista__item">
-                            <a class="lista__link" href="#">Nossas lojas</a>
-                        </li>
-                        <li class="lista__item">
-                            <a class="lista__link" href="#">Quero ser franqueado</a>
-                        </li>
-                        <li class="lista__item">
-                            <a class="lista__link" href="#">Anuncie aqui</a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Formulário de contato -->
-                <div class="rodape__contato">
-                    <form class="contato__formulario" action="#">
-                        <fieldset>
-                            <legend class="contato__titulo">Fale conosco</legend>
-                            <div class="container__contato container__contato--nome">
-                                <input name="nome" id="nome" class="input__conteudo input__conteudo--nome" type="text" placeholder="Nome" data-type="nome" required>
-                                <label for="nome" class="input__label input__label--nome">Nome</label>
-                            </div>
-                            <div class="container__contato container__contato--mensagem">
-                                <textarea name="mensagem" id="mensagem" class="input__conteudo input__conteudo--mensagem" placeholder="Escreva sua mensagem" data-type="mensagem" cols="1" rows="2" required></textarea>
-                                <label for="mensagem" class="input__label input__label--mensagem">Escreva sua mensagem</label>
-                            </div>
-                        </fieldset>
+                            <span class="campo__erro"></span>
+                        </div>
+
+                        <div class="container__contato container__contato--mensagem">
+                            <textarea name="mensagem" id="contato__mensagem" class="input__conteudo input__conteudo--mensagem" placeholder="Escreva sua mensagem" data-tipo="contatoMensagem" cols="1" rows="2" maxlength="120" required></textarea>
+                            <label for="contato__mensagem" class="input__label input__label--mensagem">Escreva sua mensagem</label>
+
+                            <span class="campo__erro"></span>
+                        </div>
+
+                        <span class="campo__aviso"></span>
+
                         <button class="formulario__botao botao__opaco botao" type="submit">Enviar mensagem</button>
-                    </form>
-                </div>
+                    </fieldset>
+                </form>
             </div>
-            
-            <div class="rodape__desenvolvedor">
-                <p class="rodape__desenvolvedor--nome">Desenvolvido por Bruno Siqueira</p>
-                <p class="rodape__desenvolvedor--ano">2022</p>
-            </div>
-        </footer>
-    </body>
+        </div>
+        
+        <!-- Informações do desenvolvedor -->
+        <div class="rodape__desenvolvedor">
+            <p class="rodape__desenvolvedor--nome">Desenvolvido por Bruno Siqueira</p>
+            <p class="rodape__desenvolvedor--ano">2022</p>
+        </div>
+    </footer>
+
+    <script src="./assets/js/pesquisa.js"></script>
+    <script src="./assets/js/adicionar-produto.js" type="module"></script>
+    <script src="./assets/js/contato.js" type="module"></script>
+</body>
 </html>
