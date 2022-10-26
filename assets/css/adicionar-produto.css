@@ -103,6 +103,7 @@
 }
 
 .campo__seletor--select {
+    background-color: var(--cor-branco);
     border-bottom: 1px solid var(--cor-cinza-box-shadow);
     border-radius: 4px 4px 4px 4px;
     box-sizing: border-box;
