@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos | AluraGeek</title>
+    <link rel="icon" href="assets/img/icones/favicon.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <div class="container container__cabecalho">
+            <a class="cabecalho__logo" href="./index.html">
+                <img src="assets/img/logo.svg" alt="Logo da AluraGeek">
+            </a>
+            <input id="" class="cabecalho__barra-pesquisa" type="search" name="" placeholder="O que deseja encontrar?">
+            <a class="botao__cabecalho botao__transparente botao__transparente--login botao" href="login.html" style="display: none;">Login</a>
+            <button class="cabecalho__icone-pesquisa" data-pesquisa></button>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="detalhes-produto">
+        </section>
+
+        <section class="produtos-similares">
+            <h2 class="produtos-similares__titulo">Produtos similares</h2>
+            <div class="produtos-similares__conteudo"></div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+
+        <div class="container__rodape">
+            <div class="container__logo-lista">
+                <!-- Logo -->
+                <img class="rodape__logo" src="./assets/img/logo.svg" alt="Logo da AluraGeek">
+                <!-- Lista de links -->
+                <ul class="rodape__lista">
+                    <li class="lista__item">
+                        <a class="lista__link" href="#">Quem somos nós</a>
+                    </li>
+                    <li class="lista__item">
+                        <a class="lista__link" href="#">Política de privacidade</a>
+                    </li>
+                    <li class="lista__item">
+                        <a class="lista__link" href="#">Programa fidelidade</a>
+                    </li>
+                    <li class="lista__item">
+                        <a class="lista__link" href="#">Nossas lojas</a>
+                    </li>
+                    <li class="lista__item">
+                        <a class="lista__link" href="#">Quero ser franqueado</a>
+                    </li>
+                    <li class="lista__item">
+                        <a class="lista__link" href="#">Anuncie aqui</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Formulário de contato -->
+            <div class="rodape__contato">
+                <form class="contato__formulario" id="contato__formulario" action="#">
+                    <fieldset>
+                        <legend class="contato__titulo">Fale conosco</legend>
+
+                        <div class="container__contato container__contato--nome">
+                            <input name="nome" id="contato__nome" class="input__conteudo input__conteudo--nome" type="text" placeholder="Nome" data-tipo="contatoNome" maxlength="40" required>
+                            <label for="contato__nome" class="input__label input__label--nome">Nome</label>
+                            <span class="campo__erro"></span>
+                        </div>
+
+                        <div class="container__contato container__contato--mensagem">
+                            <textarea name="mensagem" id="contato__mensagem" class="input__conteudo input__conteudo--mensagem" placeholder="Escreva sua mensagem" data-tipo="contatoMensagem" cols="1" rows="2" maxlength="120" required></textarea>
+                            <label for="contato__mensagem" class="input__label input__label--mensagem">Escreva sua mensagem</label>
+                            <span class="campo__erro"></span>
+                        </div>
+
+                        <span class="campo__aviso"></span>
+
+                        <button class="formulario__botao botao__opaco botao" type="submit">Enviar mensagem</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Informações do desenvolvedor -->
+        <div class="rodape__desenvolvedor">
+            <p class="rodape__desenvolvedor--nome">Desenvolvido por Bruno Siqueira</p>
+            <p class="rodape__desenvolvedor--ano">2022</p>
+        </div>
+    </footer>
+
+    <script src="./assets/js/pesquisa.js"></script>
+    <script src="./assets/js/detalhes-produto.js"></script>
+    <script src="./assets/js/contato.js" type="module"></script>
+</body>
