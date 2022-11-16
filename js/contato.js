@@ -1,28 +1,11 @@
-import { valida, verificaLimiteDeCaracteres } from './validacao.js';
-
-// const entradas = document.querySelectorAll('input, textarea');
-
-// entradas.forEach(input => {
-    
-//     input.addEventListener('blur', evento => {
-//         valida(evento.target);
-//     });
-
-//     input.addEventListener('input', evento => {
-//         verificaLimiteDeCaracteres(evento.target);
-//     });
-
-//     input.addEventListener('keyup', evento => {
-//         formataPreco(evento.target);
-//     });
-// });
+import { validaCampos, verificaLimiteDeCaracteres } from './validacao.js';
 
 const contatoForm = document.getElementById('contato__formulario')
 const contatoNome = document.getElementById('contato__nome');
 const contatoMensagem = document.getElementById('contato__mensagem');
 
 contatoNome.addEventListener('blur', evento => {
-    valida(evento.target);
+    validaCampos(evento.target);
 });
 
 contatoNome.addEventListener('input', evento => {
@@ -30,7 +13,7 @@ contatoNome.addEventListener('input', evento => {
 });
 
 contatoMensagem.addEventListener('blur', evento => {
-    valida(evento.target);
+    validaCampos(evento.target);
 });
 
 contatoMensagem.addEventListener('input', evento => {

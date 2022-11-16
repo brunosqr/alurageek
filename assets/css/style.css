@@ -4,8 +4,9 @@
 @import url(produtos.css);
 @import url(rodape.css);
 @import url(login.css);
-@import url(todos-produtos.css);
+@import url(menu-admin.css);
 @import url(adicionar-produto.css);
+@import url(detalhes-produto.css);
 
 :root {
     --fonte-padrao: 'Raleway', sans-serif;
@@ -123,12 +124,11 @@ body {
     display: flex;
 }
 
-
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
     
-}
+} */
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1360px) {
     
     .botao__transparente {
         font-size: 16px;

@@ -1,28 +1,15 @@
-import { valida, verificaLimiteDeCaracteres } from './validacao.js';
-
-// entradas.forEach(input => {
-    
-//     input.addEventListener('blur', evento => {
-//         evento.preventDefault();
-//         valida(evento.target);
-//     });
-
-//     input.addEventListener('input', evento => {
-//         evento.preventDefault();
-//         verificaLimiteDeCaracteres(evento.target);
-//     });
-// });
+import { validaCampos } from './validacao.js';
 
 const loginForm = document.getElementById('login__formulario');
 const loginEmail = document.getElementById('login__email');
 const loginSenha = document.getElementById('login__senha');
 
 loginEmail.addEventListener('blur', evento => {
-    valida(evento.target);
+    validaCampos(evento.target);
 });
 
 loginSenha.addEventListener('blur', evento => {
-    valida(evento.target);
+    validaCampos(evento.target);
 });
 
 loginForm.addEventListener('submit', evento => {

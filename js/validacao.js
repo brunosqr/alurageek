@@ -1,4 +1,4 @@
-export function valida(input) {
+export function validaCampos(input) {
 
     const tipoDeInput = input.dataset.tipo;
 
@@ -50,17 +50,6 @@ export function formataPreco() {
     precoId.value = preco;
     if(preco == 'NaN') precoId.value = '';
 };
-
-// export function validaAddImagem(evento) {
-//     let elem = document.querySelector('.adicionar-imagem__drag-and-drop');
-//     if (elem.children[0].id === 'imagem-carregada') {
-//         elem.parentElement.classList.remove('campo__invalido');
-//         elem.parentElement.querySelector('.campo__erro').innerHTML = '';
-//     } else {
-//         elem.parentElement.classList.add('campo__invalido');
-//         elem.parentElement.querySelector('.campo__erro').innerHTML = 'É preciso adicionar uma imagem.';
-//     }; 
-// };
 
 const tiposDeErro = [
     'valueMissing',

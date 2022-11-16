@@ -1,8 +1,7 @@
-import { formataPreco, valida, validaSeletor, verificaLimiteDeCaracteres } from './validacao.js';
+import { formataPreco, validaCampos, validaSeletor, verificaLimiteDeCaracteres } from './validacao.js';
 
 const addProdutoForm = document.querySelector('.adicionar-produto__formulario');
 const addImagemArea = document.querySelector('.adicionar-imagem__drag-and-drop');
-// const addImagemDrop = document.querySelector('.adicionar-imagem__drag-and-drop--input');
 const addImagemTexto = document.querySelector('.adicionar-imagem__drag-and-drop--texto');
 const addImagemBotao = document.querySelector('.adicionar-imagem__dispositivo--input');
 const seletorCategoria = document.getElementById('produto__categoria');
@@ -16,15 +15,15 @@ function mostraImagem() {
     let tipoDeImagem = imagem.type;
     let extensoesAceitas = ['image/jpg', 'image/jpeg', 'image/png'];
     if (extensoesAceitas.includes(tipoDeImagem)) {
-        let fileReader = new FileReader();
-        fileReader.onload = () => {
-            let imagemURL = fileReader.result;
+        let lerArquivo = new FileReader();
+        lerArquivo.onload = () => {
+            let imagemURL = lerArquivo.result;
             let imgTag = `<img src="${imagemURL}" id="imagem-carregada">`;
             addImagemArea.style.padding = 0;
             addImagemArea.innerHTML = imgTag;
             document.querySelector('.adicionar-imagem__drag-and-drop--input').value = imagemURL;
         };
-        fileReader.readAsDataURL(imagem);
+        lerArquivo.readAsDataURL(imagem);
     } else {
         alert('Formato de imagem inválido. Formatos aceitos: jpeg/jpg e png.');
         addImagemArea.classList.remove('active');
@@ -60,20 +59,8 @@ addImagemBotao.addEventListener('change', () => {
 });
 // Fim adicionar imagem
 
-// campos.forEach(campo => {
-//     campo.addEventListener('blur', evento =>
-//     valida(evento.target));
-
-//     if (campo.getAttribute('maxLength')) {
-//         campo.addEventListener('campo', evento =>
-//         verificaLimiteDeCaracteres(evento.target));
-//     };
-// })
-
 addProdutoForm.addEventListener('submit', evento => {
     evento.preventDefault();
-    
-    // validaAddImagem(evento.target);
 
     const aviso = evento.target.querySelector('.campo__aviso');
 
@@ -109,12 +96,6 @@ function adicionaNovoProduto() {
     } else {
         return true;
     };
-
-    // if (addImagemArea.children[0].id === 'texto') {
-    //     return false;
-    // } else {
-    //     return true;
-    // };
 };
 
 seletorCategoria.addEventListener('blur', evento => {
@@ -122,7 +103,7 @@ seletorCategoria.addEventListener('blur', evento => {
 });
 
 produtoNome.addEventListener('blur', evento => {
-    valida(evento.target);
+    validaCampos(evento.target);
 });
 
 produtoNome.addEventListener('input', evento => {
@@ -130,7 +111,7 @@ produtoNome.addEventListener('input', evento => {
 });
 
 produtoPreco.addEventListener('blur', evento => {
-    valida(evento.target);
+    validaCampos(evento.target);
 });
 
 produtoPreco.addEventListener('input', evento => {
@@ -138,7 +119,7 @@ produtoPreco.addEventListener('input', evento => {
 });
 
 produtoDescricao.addEventListener('blur', evento => {
-    valida(evento.target);
+    validaCampos(evento.target);
 });
 
 produtoDescricao.addEventListener('input', evento => {

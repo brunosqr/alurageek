@@ -72,6 +72,7 @@
 
 .todos-produtos__card--preco {
     font-weight: 700;
+    line-height: 1.1875rem;
     padding-bottom: .6rem;
 }
 
@@ -94,7 +95,7 @@
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1360px) {
     
     .container__todos-produtos {
         padding: 5rem 9rem 0;
@@ -111,6 +112,7 @@
 
     .todos-produtos__card {
         margin-bottom: 4rem;
-        width: calc(16.551% - .75rem);
+        height: 100%;
+        width: calc(16.66% - .83rem);
     }
 }

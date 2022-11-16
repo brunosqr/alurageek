@@ -216,7 +216,7 @@ select[data-select]+ .campo__seletor--titulo {
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1360px) {
     
     .adicionar-produto {
         padding: 4rem 0;

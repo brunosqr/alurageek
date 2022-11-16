@@ -1,0 +1,166 @@
+{
+    "produtos": [
+        {
+            "categoria": "star wars",
+            "img": "./assets/img/produtos-star-wars/star-wars1.png",
+            "alt": "Imagem mostrando uma mão humana segurando uma caneca com formato de capacete de Stormtrooper",
+            "nome": "Caneca Star Wars - Stormtrooper",
+            "preco": "R$124,90",
+            "descricao": "Até o mais atrapalhado Stormtrooper do Império gosta de um cafézinho bem quentinho em sua caneca favorita.<br>Ela tem capacidade de 500ml para aguentar bem o ritmo de dia-a-dia, seja fazendo suas patrulhas pela galáxia, ou até mesmo perseguindo Jedis escondidos em Tatooine!<br><br>Material: Cerâmica.<br><br>Capacidade: 500ml.",
+            "id": 1
+        },
+        {
+            "categoria": "star wars",
+            "img": "./assets/img/produtos-star-wars/star-wars2.png",
+            "alt": "Imagem de capacetes de Darth Vader e piloto TIE Fighter, montados com peças de Lego",
+            "nome": "Combo LEGO Capacetes Star Wars",
+            "preco": "R$1299,90",
+            "descricao": "Faça a sua homenagem ao Dark Lord do Sith com esse modelo colecionável Lego Star Wars Capacete de Darth Vader ou evoque memórias de cenas de batalhas clássicas com este modelo de Lego Star Wars Capacete de Piloto TIE Fighter<br><br>Quantidade de peças:<br><br>- Darth Vader: 834.<br><br>- Tie Fighter Pilot: 723.",
+            "id": 2
+        },
+        {
+            "categoria": "star wars",
+            "img": "./assets/img/produtos-star-wars/star-wars3.png",
+            "alt": "Imagem de uma miniatura do Mestre Yoda, em fundo amarelo",
+            "nome": "Miniatura Star Wars - Mestre Yoda",
+            "preco": "R$69,90",
+            "descricao": "Yoda foi um lendário Mestre Jedi, e sua conexão com a Força era mais poderosa do que o normal. Pequeno, mas sábio e poderoso, ele treinou outros Jedi por 800 anos. Miniatura decorativa.<br><br>Material: Resina<br><br>Dimensões: 8,5 x 8,5 x 17 (comprimento x largura x altura em cm).",
+            "id": 3
+        },
+        {
+            "categoria": "star wars",
+            "img": "./assets/img/produtos-star-wars/star-wars4.png",
+            "alt": "Imagem de uma estátua Stormtrooper, em fundo vermelho",
+            "nome": "Estátua Star Wars - Stormtrooper",
+            "preco": "R$39999,90",
+            "descricao": "Estátua Star Wars: The Force Awakens First Order Stormtrooper Life-Size Statue, em escala 1:1, modelada diretamente de scans 3D do original usado no filme e armado com rifle blaster iluminado com LEDs e pistola blaster no coldre de perna. Possui articulações em diferentes pontos como cabeça e braços.<br><br>Material: Fibra de vidro e resina<br><br>Altura: 1,82m.",
+            "id": 4
+        },
+        {
+            "categoria": "star wars",
+            "img": "./assets/img/produtos-star-wars/star-wars5.png",
+            "alt": "Imagem de um boneco Baby Yoda",
+            "nome": "Boneco Star Wars - Baby Yoda",
+            "preco": "R$214,90",
+            "descricao": "Abrace toda a fofura de Grogu com esse lindo brinquedo de pelúcia. Ele pode parecer um bebê, mas essa criatura adorável, chamada de A Criança, tem 50 anos.<br>Inspirado na série live-action da Disney+, O Mandaloriano, esse lindo brinquedo de pelúcia Star Wars leva à sua coleção um complemento sensível à Força.<br><br>Material: Plástico e tecido.<br><br>Dimensões: 20,5 x 15,5 x 27,5 (comprimento x largura x altura em cm)",
+            "id": 5
+        },
+        {
+            "categoria": "star wars",
+            "img": "./assets/img/produtos-star-wars/star-wars6.png",
+            "alt": "Imagem de uma action fugire Kylo Ren, com Stormtroopers ao fundo",
+            "nome": "Action Figure Star Wars - Kylo Ren",
+            "preco": "R$249,90",
+            "descricao": "Kylo Ren Action Figure Black Series 6″. Totalmente articulada, acompanha acessórios e arma, detalhes autênticos, fabricado pela Hasbro.<br><br>Material: PVC e tecido.<br><br>Dimensões: 20 x 22 x 35 (comprimento x largura x altura em cm)",
+            "id": 6
+        },
+        {
+            "categoria": "consoles",
+            "img": "./assets/img/produtos-consoles/consoles1.png",
+            "alt": "Imagem de um controle Xbox na cor branca, em fundo branco",
+            "nome": "Controle Sem Fio Xbox Branco",
+            "preco": "R$482,90",
+            "descricao": "Experimente um conforto ainda maior e conte com o tato aprimorado. Possui design elegante, anatômico e com os punhos texturizados que garantem maior aderência nas mãos.<br>Aproveite o mapeamento personalizado dos botões que possuem revestimento emborrachado e garantem uma precisão incrível.<br>Conta também com o dobro do alcance sem fio, se comparado ao modelo anterior. Divirta-se com todos os seus jogos favoritos com o conforto e comodidade que o controle oferece.<br><br>Compatibilidade: Xbox Series S / X, Xbox One, Windows 10, Android e iOS.",
+            "id": 7
+        },
+        {
+            "categoria": "consoles",
+            "img": "./assets/img/produtos-consoles/consoles2.png",
+            "alt": "Imagem de um console Playstation 5 e um controle Playstation 5, ambos na cor branca, em fundo branco",
+            "nome": "Console Sony Playstation 5",
+            "preco": "R$4499,90",
+            "descricao": "O console PS5 oferece novas possibilidades de jogabilidade que você nunca imaginou.<br>Experimente o carregamento extremamente rápido do SSD de ultra-velocidade, uma imersão mais profunda com suporte à resposta tátil, gatilhos adaptáveis e áudio 3D.<br>Além de uma geração totalmente nova de jogos incríveis PlayStation.",
+            "id": 8
+        },
+        {
+            "categoria": "consoles",
+            "img": "./assets/img/produtos-consoles/consoles3.png",
+            "alt": "Imagem de um console NES",
+            "nome": "Console NES Classic Edition",
+            "preco": "R$547,90",
+            "descricao": "Lançado em 2016, trata-se do relançamento do primeiro console da Nintendo, o famoso Nintendo Entertainment System (NES).<br>Com base na emulação de software, conta com 30 jogos internos da biblioteca licenciada do NES, incluindo alguns títulos de terceiros, como Castlevania, Donkey Kong e Super Mario Bros., contando com armazenamento apenas para salvar os estados dos jogos.<br>O sistema possui saída de vídeo HDMI e uma nova réplica do controle, que pode também ser ligado ao Wii Remote para o uso com os jogos do Virtual Console.",
+            "id": 9
+        },
+        {
+            "categoria": "consoles",
+            "img": "./assets/img/produtos-consoles/consoles4.png",
+            "alt": "Imagem de um controle Nintendo Switch Joy-Con, com as duas peças separadas, em fundo preto",
+            "nome": "Controle Nintendo Switch Joy-Con",
+            "preco": "R$547,90",
+            "descricao": "Os controles Joy-Con possibilitam maneiras criativas de jogar.<br>Dois Joy-Con podem ser usados independentemente, um em cada mão, ou juntos encaixados em um suporte para Joy-Con, funcionando como um só controle.<br>Também é possível encaixá-los no console para jogar no modo portátil, ou compartilhá-los com amigos e desfrutar de uma ação para dois jogadores em jogos compatíveis.<br>Cada Joy-Con conta com todos os botões e pode servir como um controle individual. Cada um deles inclui um acelerômetro e giroscópio, possibilitando controle de movimento na direita e na esquerda.",
+            "id": 10
+        },
+        {
+            "categoria": "consoles",
+            "img": "./assets/img/produtos-consoles/consoles5.png",
+            "alt": "Imagem de um console Xbox Series X, em fundo verde",
+            "nome": "Console Xbox Series X 1tb",
+            "preco": "R$4199,90",
+            "descricao": "Explore novos mundos e desfrute da ação como nunca antes com 12 teraflops de poder de processamento gráfico.<br>Experimente a velocidade e o desempenho da próxima geração com a Xbox Velocity Architecture, alimentada por um SSD personalizado e um software integrado. Troque simultaneamente entre vários jogos em um instante com o Quick Resume.<br>Jogue milhares de jogos de quatro gerações de Xbox, incluindo o Xbox One, Xbox 360 e títulos originais com compatibilidade com as versões anteriores. Devido à potência e a velocidade do Xbox Series X, muitos desses jogos ficarão melhores do que nunca.",
+            "id": 11
+        },
+        {
+            "categoria": "consoles",
+            "img": "./assets/img/produtos-consoles/consoles6.png",
+            "alt": "Imagem de um console Game Boy Color e 3 cartuchos para Game Boy Color",
+            "nome": "Nintendo Game Boy Color",
+            "preco": "R$749,90",
+            "descricao": "O Game Boy Color é o sucessor do Game Boy da Nintendo. O portátil foi lançado em 1998.<br>Ele apresenta uma tela colorida, em vez de monocromática do modelo anterior e é ligeiramente maior do que o Game Boy Pocket.<br>Assim como o Game Boy original, ele possui um processador de 8-bit.<br>Com 3 jogos inclusos: Tetris, Pokémon Gold e Donkey Kong Land",
+            "id": 12
+        },
+        {
+            "categoria": "diversos",
+            "img": "./assets/img/produtos-diversos/diversos1.png",
+            "alt": "Imagem de uma camiseta com estampa da Nagasaki Gaming Conference 2004",
+            "nome": "Camiseta Nagasaki Gaming Conference",
+            "preco": "R$219,90",
+            "descricao": "Camiseta oficial do evento Nagasaki Gaming Conference 2004.<br>Confeccionada com material de altíssima qualidade que não desbota e garante durabilidade e conforto.<br><br>Material: Malha algodão fio 30 penteado",
+            "id": 13
+        },
+        {
+            "categoria": "diversos",
+            "img": "./assets/img/produtos-diversos/diversos2.png",
+            "alt": "Imagem de uma pessoa jogando videogame, usando uma camiseta com estampa de controle do NES",
+            "nome": "Camiseta joystick NES (Cinza)",
+            "preco": "R$79,90",
+            "descricao": "Tecido em malha importada. Não é necessário passar com ferro após lavagem devido a composição das fibras, basta retirar do varal e vestir.<br>Processo de termo fusão que garante mais durabilidade e flexibilidade na estampa, a imagem não desgasta e não danifica.<br>A costura dupla auxilia na qualidade da mesma. Conta ainda com característica elástica que não deforma. Retém menos suor.<br><br>Material: 70% Algodão/25% Poli/5% Elastano.",
+            "id": 14
+        },
+        {
+            "categoria": "diversos",
+            "img": "./assets/img/produtos-diversos/diversos3.png",
+            "alt": "Imagem de miniaturas Sonic e Tails, em fundo azul",
+            "nome": "Miniaturas Sonic The Hedgehog",
+            "preco": "R$129,90",
+            "descricao": "Miniaturas da coleção Hedgehog, para se divertir e colecionar para exposição.<br>Alto detalhamento na pintura e qualidade de material.<br>São 10 personagens à sua escolha: Sonic, Old Sonic, Metal Sonic, Shadow, Ray, Dr. Eggman, Tails, Old Tails, Mighty e Knuckles (vendidos separadamente).<br><br>Dimensões: 4,5 x 9 x 13 (comprimento x largura x altura em cm)",
+            "id": 15
+        },
+        {
+            "categoria": "diversos",
+            "img": "./assets/img/produtos-diversos/diversos4.png",
+            "alt": "Imagem de rádio relógio antigo na cor rosa, em fundo azul",
+            "nome": "Rádio Relógio Flip Vintage",
+            "preco": "R$179,90",
+            "descricao": "Rádio relógio analógico vintage retrô, inspirado nos aparelhos das décadas de 1960 e 1970.<br>Alimentação em rede elétrica 127 volts ou 2 pilhas AA (não inclusas).<br>Funções: Rádio AM/FM em modo manual ou acionado pelo despertador, iluminação do display e função Sleep.<br>Design de muito bom gosto, ideal para decoração de ambientes como quartos, escritórios, estúdios, bares, cozinhas temáticas, entre outros.",
+            "id": 16
+        },
+        {
+            "categoria": "diversos",
+            "img": "./assets/img/produtos-diversos/diversos5.png",
+            "alt": "Imagem de uma pessoa usando óculos VR Playstation",
+            "nome": "Marvel's Iron Man VR Bundle           ",
+            "preco": "R$3339,90",
+            "descricao": "O pacote inclui um óculos PlayStation® VR (ZVR2 - modelo mais atual), câmera PlayStation®, dois controles de movimento PlayStation® Move, um voucher com o código pra baixar o jogo Iron Man VR da Marvel e um adaptador para usar o VR no Playstation 5.<br>Coloque o óculos PlayStation VR para se vestir como Armored Avenger na aventura original do Homem de Ferro.<br>Enfrente um dos maiores inimigos do Homem de Ferro em batalhas repletas de ação.",
+            "id": 17
+        },
+        {
+            "categoria": "diversos",
+            "img": "./assets/img/produtos-diversos/diversos6.png",
+            "alt": "Imagem de fantasia do personagem Pikachu, em fundo urbano",
+            "nome": "Fantasia Inflável Pikachu para Adultos",
+            "preco": "R$499,90",
+            "descricao": "Confeccionado em tecido leve e de alta qualidade que não prejudica a movimentação, possui ótimo desempenho impermeável e sem vazamentos.<br><br>Modo de uso: Vista a roupa, ligue o inflador, em 60 segundos estará pronto para a diversão.<br><br>Tamanho: Ideal para pessoas entre 1,50m e 1,85m<br><br>Material: Poliéster impermeável de alta densidade.<br><br>Alimentação: 4 pilhas AA (não inclusas)",
+            "id": 18
+        }
+    ]
+}
