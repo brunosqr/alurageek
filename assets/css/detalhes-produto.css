@@ -1,39 +1,40 @@
-.detalhes-produto .produtos-similares {
+main {
     background-color: var(--cor-cinza-fundo);
 }
 
-.produto-detalhado {
-    margin-bottom: 1rem;
+.detalhes__container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.produto-detalhado__imagem {
-    height: 50vw;
+.detalhes__imagem {
+    height: 53.5vw;
     object-fit: cover;
     width: 100%;
 }
 
-.produto-detalhado__textos {
+.detalhes__textos {
     padding: 1rem;
 }
 
-.produto-detalhado__titulo {
+.detalhes__textos--titulo {
     font-size: 1.375rem;
     font-weight: 500;
     line-height: 1.6rem;
     padding-bottom: 1rem;
 }
 
-.produto-detalhado__preco {
+.detalhes__textos--preco {
     font-weight: 700;
 }
 
-.produto-detalhado__descricao {
+.detalhes__textos--descricao {
     font-size: .875rem;
     padding-top: 1rem;
 }
 
 .produtos-similares {
-    padding: 0 1rem 1rem;
+    padding: 1rem;
 }
 
 .produtos-similares__titulo {
@@ -56,6 +57,10 @@
     width: calc(50% - 0.5rem);
 }
 
+.produtos-similares__card:nth-child(n+5) {
+    display: none;
+}
+
 .produtos-similares__card--imagem {
     height: 10.875rem;
     object-fit: cover;
@@ -64,13 +69,13 @@
 .produtos-similares__card--titulo {
     font-size: .875rem;
     font-weight: 500;
-    padding: 0.5rem 0;
+    padding: .5rem 0;
 }
 
 .produtos-similares__card--preco {
     font-weight: 700;
     line-height: 1.1875rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: .5rem;
 }
 
 .produtos-similares__card--ver-produto {
@@ -82,6 +87,40 @@
 
 @media screen and (min-width: 768px) {
     
+    .detalhes {
+        padding: 2rem;
+    }
+
+    .detalhes__container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .detalhes__imagem {
+        height: 20vw;
+        width: 37%;
+    }
+
+    .detalhes__textos {
+        padding-top: 0;
+        width: 57%;
+    }
+
+    .produtos-similares {
+        padding: 2rem;
+    }
+
+    .produtos-similares__conteudo {
+        flex-wrap: nowrap;
+    }
+
+    .produtos-similares__card--imagem {
+        width: 100%;
+    }
+
+    .produtos-similares__card--ver-produto {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (min-width: 1360px) {

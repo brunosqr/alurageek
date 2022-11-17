@@ -30,15 +30,15 @@ const mostraDetalhesDoProduto = () => {
         };
 
         let cardNovo = document.createElement('div');
-        cardNovo.classList.add('produto-detalhado');
+        cardNovo.classList.add('detalhes__container');
         cardNovo.innerHTML =
-        `<img src="${produtoDetalhado.img}" alt="${produtoDetalhado.alt}" class="produto-detalhado__imagem">
-        <div class="produto-detalhado__textos">
-            <h2 class="produto-detalhado__titulo">${produtoDetalhado.nome}</h2>
-            <span class="produto-detalhado__preco">${produtoDetalhado.preco}</span>
-            <p class="produto-detalhado__descricao">${produtoDetalhado.descricao}</p>
+        `<img src="${produtoDetalhado.img}" alt="${produtoDetalhado.alt}" class="detalhes__imagem">
+        <div class="detalhes__textos">
+            <h2 class="detalhes__textos--titulo">${produtoDetalhado.nome}</h2>
+            <span class="detalhes__textos--preco">${produtoDetalhado.preco}</span>
+            <p class="detalhes__textos--descricao">${produtoDetalhado.descricao}</p>
         </div>`
-        document.querySelector('.detalhes-produto').appendChild(cardNovo);
+        document.querySelector('.detalhes').appendChild(cardNovo);
 
         response.filter(response => response.categoria == produtoDetalhado.categoria).forEach(item => {
             cardValores = {
