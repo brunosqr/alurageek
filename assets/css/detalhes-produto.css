@@ -20,7 +20,6 @@ main {
 .detalhes__textos--titulo {
     font-size: 1.375rem;
     font-weight: 500;
-    line-height: 1.6rem;
     padding-bottom: 1rem;
 }
 
@@ -97,12 +96,12 @@ main {
     }
 
     .detalhes__imagem {
-        height: 20vw;
+        height: 21vw;
         width: 37%;
     }
 
     .detalhes__textos {
-        padding-top: 0;
+        padding: 0 0 0 1rem;
         width: 57%;
     }
 
@@ -125,4 +124,34 @@ main {
 
 @media screen and (min-width: 1360px) {
     
+    .detalhes {
+        padding: 4rem 9rem 2rem;
+    }
+
+    .detalhes__imagem {
+        height: 30vw;
+        width: 53%;
+    }
+
+    .detalhes__textos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 47%;
+    }
+
+    .detalhes__textos--titulo {
+        font-size: 3.25rem;
+    }
+
+    .produtos-similares {
+        padding: 2rem 9rem 4rem;
+    }
+
+    .produtos-similares__card:nth-child(n+5):nth-child(-n+6) {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: calc(50% - .5rem);
+    }
 }
