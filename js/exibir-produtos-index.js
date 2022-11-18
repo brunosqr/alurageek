@@ -1,4 +1,5 @@
-function exibeProdutos() {
+function exibeProdutosIndex() {
+    
     fetch('http://localhost:3000/produtos')
     .then(response => {
         return response.json();
@@ -24,13 +25,17 @@ function exibeProdutos() {
             }
 
             let cardNovo = document.createElement('div');
-            cardNovo.classList.add('produto');
+            cardNovo.classList.add('produto'); // mudar para 'produtos__card'
             cardNovo.innerHTML =
             `<img src="${item.img}" class="produto__imagem" alt="
             ${item.alt}">
             <h3 class="produto__titulo">${item.nome}</h3>
             <span class="produto__preco">${item.preco}</span>
             <a class="produto__ver-produto" href="./detalhes-produto.html?id=${item.id}">Ver produto</a>`
+            // mudar produto__imagem para produtos__card--imagem
+            // mudar produto__titulo para produtos__card--titulo
+            // mudar produto__preco para produtos__card--preco
+            // mudar produto__ver-produto para produtos__card--ver-produto
             document.querySelector('[data-tipo="star-wars"]').appendChild(cardNovo);
         });
 
@@ -78,4 +83,4 @@ function exibeProdutos() {
     })
 };
 
-exibeProdutos();
+exibeProdutosIndex();

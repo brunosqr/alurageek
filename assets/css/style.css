@@ -36,6 +36,10 @@ body {
     height: 100vh;
 }
 
+main {
+    background-color: var(--cor-cinza-fundo);
+}
+
 .container {
     align-items: center;
     display: flex;
@@ -131,12 +135,12 @@ body {
 @media screen and (min-width: 1360px) {
     
     .botao__transparente {
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 400;
     }
 
     .botao__opaco {
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 400;
     }
 }
