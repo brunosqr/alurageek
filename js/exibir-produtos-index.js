@@ -25,17 +25,13 @@ function exibeProdutosIndex() {
             }
 
             let cardNovo = document.createElement('div');
-            cardNovo.classList.add('produto'); // mudar para 'produtos__card'
+            cardNovo.classList.add('produtos__card');
             cardNovo.innerHTML =
-            `<img src="${item.img}" class="produto__imagem" alt="
+            `<img src="${item.img}" class="produtos__card--imagem" alt="
             ${item.alt}">
-            <h3 class="produto__titulo">${item.nome}</h3>
-            <span class="produto__preco">${item.preco}</span>
-            <a class="produto__ver-produto" href="./detalhes-produto.html?id=${item.id}">Ver produto</a>`
-            // mudar produto__imagem para produtos__card--imagem
-            // mudar produto__titulo para produtos__card--titulo
-            // mudar produto__preco para produtos__card--preco
-            // mudar produto__ver-produto para produtos__card--ver-produto
+            <h3 class="produtos__card--titulo">${item.nome}</h3>
+            <span class="produtos__card--preco">${item.preco}</span>
+            <a class="produtos__card--ver-produto" href="./detalhes-produto.html?id=${item.id}">Ver produto</a>`
             document.querySelector('[data-tipo="star-wars"]').appendChild(cardNovo);
         });
 
@@ -50,13 +46,13 @@ function exibeProdutosIndex() {
             }
 
             let cardNovo = document.createElement('div');
-            cardNovo.classList.add('produto');
+            cardNovo.classList.add('produtos__card');
             cardNovo.innerHTML =
-            `<img src="${item.img}" class="produto__imagem" alt="
+            `<img src="${item.img}" class="produtos__card--imagem" alt="
             ${item.alt}">
-            <h3 class="produto__titulo">${item.nome}</h3>
-            <span class="produto__preco">${item.preco}</span>
-            <a class="produto__ver-produto" href="./detalhes-produto.html?id=${item.id}">Ver produto</a>`
+            <h3 class="produtos__card--titulo">${item.nome}</h3>
+            <span class="produtos__card--preco">${item.preco}</span>
+            <a class="produtos__card--ver-produto" href="./detalhes-produto.html?id=${item.id}">Ver produto</a>`
             document.querySelector('[data-tipo="consoles"]').appendChild(cardNovo);
         });
 
@@ -71,13 +67,13 @@ function exibeProdutosIndex() {
             }
 
             let cardNovo = document.createElement('div');
-            cardNovo.classList.add('produto');
+            cardNovo.classList.add('produtos__card');
             cardNovo.innerHTML =
-            `<img src="${item.img}" class="produto__imagem" alt="
+            `<img src="${item.img}" class="produtos__card--imagem" alt="
             ${item.alt}">
-            <h3 class="produto__titulo">${item.nome}</h3>
-            <span class="produto__preco">${item.preco}</span>
-            <a class="produto__ver-produto" href="./detalhes-produto.html?id=${item.id}">Ver produto</a>`
+            <h3 class="produtos__card--titulo">${item.nome}</h3>
+            <span class="produtos__card--preco">${item.preco}</span>
+            <a class="produtos__card--ver-produto" href="./detalhes-produto.html?id=${item.id}">Ver produto</a>`
             document.querySelector('[data-tipo="diversos"]').appendChild(cardNovo);
         });
     })

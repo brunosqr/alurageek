@@ -1,6 +1,6 @@
 const botaoPesquisa = document.querySelector('.cabecalho__icone-pesquisa');
 const inputPesquisa = document.querySelector('.cabecalho__barra-pesquisa');
-const botaoCabecalho = document.querySelector('.botao__cabecalho');
+const botaoCabecalho = document.querySelector('[data-botao-cabecalho]');
 const logoCabecalho = document.querySelector('.cabecalho__logo');
 
 // Esconde o ícone e mostra a barra de pesquisa no mobile

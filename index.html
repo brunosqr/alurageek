@@ -15,12 +15,12 @@
 <body>
     <!-- Cabeçalho -->
     <header class="cabecalho">
-        <div class="container container__cabecalho">
+        <div class="cabecalho__container container">
             <a class="cabecalho__logo" href="./index.html">
                 <img src="assets/img/logo.svg" alt="Logo da AluraGeek">
             </a>
             <input id="" class="cabecalho__barra-pesquisa" type="search" name="" placeholder="O que deseja encontrar?">
-            <a class="botao__cabecalho botao__transparente botao__transparente--login botao" href="login.html">Login</a>
+            <a class="botao__transparente botao__transparente--login botao" data-botao-cabecalho href="login.html">Login</a>
             <button class="cabecalho__icone-pesquisa" data-pesquisa></button>
         </div>
     </header>
@@ -30,10 +30,10 @@
 
         <!-- Banner -->
         <section class="banner">
-            <div class="container container__banner">
+            <div class="banner__container container">
                 <div class="banner__textos">
-                    <h2 class="banner__titulo">Dezembro Promocional</h2>
-                    <h3 class="banner__subtitulo">Produtos selecionados com 33% de desconto</h3>
+                    <h2 class="banner__textos--titulo">Dezembro Promocional</h2>
+                    <h3 class="banner__textos--subtitulo">Produtos selecionados com 33% de desconto</h3>
                 </div>
                 <a class="banner__botao botao__opaco botao" href="#consoles">Ver consoles</a>
             </div>
@@ -43,37 +43,35 @@
         <section class="produtos">
 
             <!-- Produtos: Star Wars -->
-            <div class="container container__produtos"> <!-- mudar para class="produtos__container container"-->
+            <div class="produtos__container container">
                 <div class="produtos__cabecalho">
-                    <h4 class="produtos__titulo">Star Wars</h4> <!-- mudar para class="produtos__cabecalho--titulo" -->
-                    <a class="produtos__ver-tudo" href="#">Ver tudo</a>
-                    <!-- mudar para class="produtos__cabecalho--ver-tudo" -->
+                    <h4 class="produtos__cabecalho--titulo">Star Wars</h4>
+                    <a class="produtos__cabecalho--ver-tudo" href="#">Ver tudo</a>
                 </div>
 
-                <div class="produtos__cards" data-tipo="star-wars">
-                    <!-- mudar para class="produtos__conteudo" -->
+                <div class="produtos__conteudo" data-tipo="star-wars">
                 </div>
             </div>
 
             <!-- Produtos: Consoles -->
-            <div class="container container__produtos">
+            <div class="produtos__container container">
                 <div class="produtos__cabecalho">
-                    <h4 class="produtos__titulo">Consoles</h4>
-                    <a class="produtos__ver-tudo" href="#">Ver tudo</a>
+                    <h4 class="produtos__cabecalho--titulo">Consoles</h4>
+                    <a class="produtos__cabecalho--ver-tudo" href="#">Ver tudo</a>
                 </div>
 
-                <div class="produtos__cards" data-tipo="consoles">
+                <div class="produtos__conteudo" data-tipo="consoles">
                 </div>
             </div>
 
             <!-- Produtos: Diversos -->
-            <div class="container container__produtos">
+            <div class="produtos__container container">
                 <div class="produtos__cabecalho">
-                    <h4 class="produtos__titulo">Diversos</h4>
-                    <a class="produtos__ver-tudo" href="#">Ver tudo</a>
+                    <h4 class="produtos__cabecalho--titulo">Diversos</h4>
+                    <a class="produtos__cabecalho--ver-tudo" href="#">Ver tudo</a>
                 </div>
 
-                <div class="produtos__cards" data-tipo="diversos">
+                <div class="produtos__conteudo" data-tipo="diversos">
                 </div>
             </div>
         </section>

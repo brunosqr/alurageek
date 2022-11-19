@@ -5,7 +5,7 @@
     text-align: center;
 }
 
-.container__login {
+.login__container {
     justify-content: center;
     flex-direction: column;
     padding: 6rem 0 5rem;
@@ -13,12 +13,12 @@
     width: 100%;
 }
 
-.login__titulo {
+.login__formulario--titulo {
     font-weight: 700;
     margin-bottom: 1rem;
 }
 
-.container__login--campo {
+.login__formulario--campo {
     background-color: var(--cor-branco);
     border-radius: 4px 4px 4px 4px;
     box-sizing: border-box;
@@ -66,7 +66,7 @@
     border: 1px solid var(--cor-erro);
 }
 
-.login__botao {
+.login__formulario--botao {
     height: 2.5rem;
     margin: 0 auto;
     width: 6.8125rem;
@@ -74,23 +74,23 @@
 
 @media screen and (min-width: 768px) {
     
-    .container__login {
+    .login__container {
         padding: 3rem 0 4rem;
     }
 }
 
 @media screen and (min-width: 1360px) {
     
-    .container__login {
+    .login__container {
         padding: 6rem 0 5rem;
     }
     
-    .login__titulo {
+    .login__formulario--titulo {
         font-size: 1.125rem;
         margin-bottom: 2rem;
     }
 
-    .container__login--campo {
+    .login__formulario--campo {
         margin-bottom: 1.5rem;
         width: 26.4375rem;
     }
@@ -109,7 +109,7 @@
         top: .65rem;
     }
     
-    .login__botao {
+    .login__formulario--botao {
         margin: 0;
         height: 3.875rem;
         width: 26.4375rem;
