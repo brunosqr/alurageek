@@ -73,7 +73,7 @@ const mensagensDeErro = {
     },
     loginSenha: {
         valueMissing: campoVazio,
-        patternMismatch: 'A senha deve conter entre 6 e 12 caracteres, pelo menos uma letra maiúscula e uma minúscula, um número e não deve conter símbolos.'
+        patternMismatch: 'Sua senha deve conter entre 6 e 12 caracteres.<br>Combine números, letras maiúsculas e minúsculas.'
     },
     produtoNome: {
         valueMissing: campoVazio,
