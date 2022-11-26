@@ -1,6 +1,6 @@
 function exibeProdutosAdmin() {
 
-    fetch('http://localhost:3000/produtos')
+    fetch('https://gist.githubusercontent.com/brunosqr/395bd2c73af2b21e4054fdd3fd925445/raw/24fa0b8a71dcf866aa0e3d68d8391161e4130168/db.json')
     .then(response => {
         return response.json();
     })
@@ -14,7 +14,9 @@ function exibeProdutosAdmin() {
             id: "",
         }
 
-        response.forEach(item => {
+        let produtos = response.produtos; // extraindo "produtos" do arquivo JSON
+
+        produtos.forEach(item => {
             cardValores = {
                 img: item.img,
                 imgAlt: item.imgAlt,

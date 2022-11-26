@@ -1,6 +1,6 @@
 function exibeProdutosIndex() {
     
-    fetch('http://localhost:3000/produtos')
+    fetch('https://gist.githubusercontent.com/brunosqr/395bd2c73af2b21e4054fdd3fd925445/raw/24fa0b8a71dcf866aa0e3d68d8391161e4130168/db.json')
     .then(response => {
         return response.json();
     })
@@ -14,7 +14,9 @@ function exibeProdutosIndex() {
             id: ""
         }
 
-        response.filter(response => response.categoria == 'star wars').forEach(item => {
+        let produtos = response.produtos; // extraindo "produtos" do arquivo JSON
+
+        produtos.filter(produtos => produtos.categoria == 'star wars').forEach(item => {
             cardValores = {
                 categoria: item.categoria,
                 img: item.img,
@@ -35,7 +37,7 @@ function exibeProdutosIndex() {
             document.querySelector('[data-tipo="star-wars"]').appendChild(cardNovo);
         });
 
-        response.filter(response => response.categoria == 'consoles').forEach(item => {
+        produtos.filter(produtos => produtos.categoria == 'consoles').forEach(item => {
             cardValores = {
                 categoria: item.categoria,
                 img: item.img,
@@ -56,7 +58,7 @@ function exibeProdutosIndex() {
             document.querySelector('[data-tipo="consoles"]').appendChild(cardNovo);
         });
 
-        response.filter(response => response.categoria == 'diversos').forEach(item => {
+        produtos.filter(produtos => produtos.categoria == 'diversos').forEach(item => {
             cardValores = {
                 categoria: item.categoria,
                 img: item.img,

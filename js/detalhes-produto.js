@@ -3,7 +3,7 @@ const id = pegaURL.searchParams.get('id');
 
 const mostraDetalhesDoProduto = () => {
 
-    fetch('http://localhost:3000/produtos')
+    fetch('https://gist.githubusercontent.com/brunosqr/395bd2c73af2b21e4054fdd3fd925445/raw/24fa0b8a71dcf866aa0e3d68d8391161e4130168/db.json')
     .then(response => {
         return response.json();
     })
@@ -18,7 +18,9 @@ const mostraDetalhesDoProduto = () => {
             id: ""
         }
 
-        const produtoDetalhado = response.find(response => response.id == id);
+        let produtos = response.produtos; // extraindo "produtos" do arquivo JSON
+
+        const produtoDetalhado = produtos.find(produtos => produtos.id == id);
         cardValores = {
             categoria: produtoDetalhado.categoria,
             img: produtoDetalhado.img,
@@ -40,7 +42,7 @@ const mostraDetalhesDoProduto = () => {
         </div>`
         document.querySelector('.detalhes').appendChild(cardNovo);
 
-        response.filter(response => response.categoria == produtoDetalhado.categoria).forEach(item => {
+        produtos.filter(produtos => produtos.categoria == produtoDetalhado.categoria).forEach(item => {
             cardValores = {
                 categoria: item.categoria,
                 img: item.img,
