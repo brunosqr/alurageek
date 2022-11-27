@@ -7,6 +7,7 @@
 @import url(menu-admin.css);
 @import url(adicionar-produto.css);
 @import url(detalhes-produto.css);
+@import url(busca.css);
 
 :root {
     --fonte-padrao: 'Raleway', sans-serif;

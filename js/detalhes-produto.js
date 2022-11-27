@@ -3,7 +3,7 @@ const id = pegaURL.searchParams.get('id');
 
 const mostraDetalhesDoProduto = () => {
 
-    fetch('https://gist.githubusercontent.com/brunosqr/395bd2c73af2b21e4054fdd3fd925445/raw/24fa0b8a71dcf866aa0e3d68d8391161e4130168/db.json')
+    fetch('https://gist.githubusercontent.com/brunosqr/395bd2c73af2b21e4054fdd3fd925445/raw/2d5beea079bff9e56591d2aa6f108bcca58e2e3d/db.json')
     .then(response => {
         return response.json();
     })
@@ -31,16 +31,16 @@ const mostraDetalhesDoProduto = () => {
             id: produtoDetalhado.id
         };
 
-        let cardNovo = document.createElement('div');
-        cardNovo.classList.add('detalhes__container');
-        cardNovo.innerHTML =
+        let novoConteudo = document.createElement('div');
+        novoConteudo.classList.add('detalhes__container');
+        novoConteudo.innerHTML =
         `<img src="${produtoDetalhado.img}" alt="${produtoDetalhado.alt}" class="detalhes__imagem">
         <div class="detalhes__textos">
             <h2 class="detalhes__textos--titulo">${produtoDetalhado.nome}</h2>
             <span class="detalhes__textos--preco">${produtoDetalhado.preco}</span>
             <p class="detalhes__textos--descricao">${produtoDetalhado.descricao}</p>
         </div>`
-        document.querySelector('.detalhes').appendChild(cardNovo);
+        document.querySelector('.detalhes').appendChild(novoConteudo);
 
         produtos.filter(produtos => produtos.categoria == produtoDetalhado.categoria).forEach(item => {
             cardValores = {
@@ -53,14 +53,14 @@ const mostraDetalhesDoProduto = () => {
                 id: item.id
             };
 
-            let cardNovo = document.createElement('div');
-            cardNovo.classList.add('produtos-similares__card');
-            cardNovo.innerHTML =
+            let novoConteudo = document.createElement('div');
+            novoConteudo.classList.add('produtos-similares__card');
+            novoConteudo.innerHTML =
             `<img src="${item.img}" alt="${item.alt}" class="produtos-similares__card--imagem">
             <h4 class="produtos-similares__card--titulo">${item.nome}</h4>
             <span class="produtos-similares__card--preco">${item.preco}</span>
             <a href="./detalhes-produto.html?id=${item.id}" class="produtos-similares__card--ver-produto">Ver Produto</a>`
-            document.querySelector('.produtos-similares__conteudo').appendChild(cardNovo);
+            document.querySelector('.produtos-similares__conteudo').appendChild(novoConteudo);
         });
     });
 };

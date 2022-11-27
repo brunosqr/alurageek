@@ -4,17 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalhes do Produto | AluraGeek</title>
+    <title>Busca | AluraGeek</title>
     <link rel="icon" href="assets/img/icones/favicon.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-    
     <!-- Cabeçalho -->
     <header class="cabecalho">
         <div class="cabecalho__container container">
@@ -22,22 +20,18 @@
                 <img src="assets/img/logo.svg" alt="Logo da AluraGeek">
             </a>
             <input id="" class="cabecalho__barra-pesquisa" type="search" name="" placeholder="O que deseja encontrar?">
-            <a class="botao__transparente botao__transparente--login botao" data-botao-cabecalho href="login.html" style="display: none;">Login</a>
+            <a class="botao__transparente botao__transparente--login botao" data-botao-cabecalho href="login.html">Login</a>
             <button class="cabecalho__icone-pesquisa" data-pesquisa></button>
         </div>
     </header>
 
+    <!-- Conteúdo principal -->
     <main>
-
-        <section class="detalhes">
-        </section>
-
-        <section class="produtos-similares">
-            <h2 class="produtos-similares__titulo">Produtos similares</h2>
-            <div class="produtos-similares__conteudo">
+        <section class="produtos-buscados">
+            <h4 class="produtos-buscados__titulo">Resultado da busca</h4>
+            <div class="produtos-buscados__conteudo">
             </div>
         </section>
-
     </main>
 
     <!-- Rodapé -->
@@ -110,8 +104,8 @@
             <p class="rodape__desenvolvedor--ano">2022</p>
         </div>
     </footer>
-
+    
     <script src="./js/pesquisa.js"></script>
-    <script src="./js/detalhes-produto.js"></script>
     <script src="./js/contato.js" type="module"></script>
 </body>
+</html>

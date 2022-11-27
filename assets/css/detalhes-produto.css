@@ -121,7 +121,7 @@
 @media screen and (min-width: 1360px) {
     
     .detalhes {
-        padding: 4rem 9rem 2rem;
+        padding: 4rem 9.5rem 2rem;
     }
 
     .detalhes__imagem {
@@ -141,7 +141,11 @@
     }
 
     .produtos-similares {
-        padding: 2rem 9rem 4rem;
+        padding: 2rem 9.5rem 4rem;
+    }
+
+    .produtos-similares__titulo {
+        font-size: 2rem;
     }
 
     .produtos-similares__card:nth-child(n+5):nth-child(-n+6) {
